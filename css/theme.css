@@ -1,0 +1,115 @@
+/* Lightweight theme overrides: colors, spacing, dark mode */
+:root {
+  --bg: #0b1220;
+  --surface: #0f172a;
+  --text: #0b1220; /* default for light until overridden below */
+  --muted: #64748b;
+  --border: rgba(15, 23, 42, 0.1);
+  --accent: #4f46e5; /* used for small accents like subheadings */
+  --accent-contrast: #ffffff;
+  --btn: #b1b493; /* match Download CV color */
+  --btn-contrast: #ffffff;
+}
+
+/* Light mode defaults (body has white bg by default from base CSS) */
+body {
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: #0f172a;
+  background-color: #ffffff;
+}
+
+.text-muted { color: var(--muted) !important; }
+
+/* Navbar */
+.navbar.ftco_navbar {
+  background: rgba(15, 23, 42, 0.85) !important;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+.navbar .navbar-brand { font-weight: 700; letter-spacing: 0.2px; }
+
+/* Buttons – align with Download CV color */
+.btn-primary { background-color: var(--btn) !important; border-color: var(--btn) !important; color: var(--btn-contrast) !important; }
+.btn-primary:hover { filter: brightness(0.92); }
+.btn-outline-primary { color: var(--btn) !important; border-color: var(--btn) !important; }
+.btn-outline-primary:hover { background-color: var(--btn) !important; color: var(--btn-contrast) !important; }
+
+/* Cards and service blocks */
+.services, .bg-white.rounded-lg.shadow {
+  border: 1px solid var(--border);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.services:hover, .bg-white.rounded-lg.shadow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(2, 6, 23, 0.08) !important;
+}
+
+/* Headings */
+.heading-section .subheading { color: var(--accent) !important; font-weight: 600; letter-spacing: .5px; }
+.hero .text h1 { line-height: 1.2; }
+
+/* Footer */
+.ftco-footer { background: #0f172a !important; }
+.ftco-footer, .ftco-footer a { color: #cbd5e1; }
+.ftco-footer a:hover { color: #ffffff; }
+
+/* Light backgrounds */
+.bg-light { background: #f8fafc !important; }
+
+/* Dark mode */
+html[data-theme='dark'] body { background-color: #0b1220; color: #e2e8f0; }
+html[data-theme='dark'] .navbar.ftco_navbar { background: rgba(2, 6, 23, 0.7) !important; }
+html[data-theme='dark'] .bg-light { background: #0f172a !important; }
+html[data-theme='dark'] .bg-white { background: #0b1220 !important; }
+html[data-theme='dark'] .services, html[data-theme='dark'] .bg-white.rounded-lg.shadow { border-color: rgba(148, 163, 184, 0.12); }
+html[data-theme='dark'] a { color: #93c5fd; }
+html[data-theme='dark'] a:hover { color: #bfdbfe; }
+html[data-theme='dark'] .btn-outline-primary { color: var(--btn) !important; border-color: var(--btn) !important; }
+html[data-theme='dark'] .ftco-footer, html[data-theme='dark'] .ftco-footer a { color: #94a3b8; }
+
+/* Improve contrast of headings, text, nav links in dark mode */
+html[data-theme='dark'] h1,
+html[data-theme='dark'] h2,
+html[data-theme='dark'] h3,
+html[data-theme='dark'] h4,
+html[data-theme='dark'] h5,
+html[data-theme='dark'] h6 { color: #e5e7eb !important; }
+
+html[data-theme='dark'] p,
+html[data-theme='dark'] li,
+html[data-theme='dark'] span,
+html[data-theme='dark'] .text { color: #cbd5e1 !important; }
+
+html[data-theme='dark'] .navbar .nav-link,
+html[data-theme='dark'] .navbar .navbar-brand { color: #e5e7eb !important; }
+
+html[data-theme='dark'] .heading-section .subheading { color: #a5b4fc !important; }
+html[data-theme='dark'] .heading-section h2 { color: #e5e7eb !important; }
+html[data-theme='dark'] .hero .text h1 { color: #f1f5f9 !important; }
+
+/* Services cards readability */
+html[data-theme='dark'] .services { background-color: #0f172a !important; }
+html[data-theme='dark'] .services .media-body h3 { color: #e2e8f0 !important; }
+html[data-theme='dark'] .services .media-body p { color: #cbd5e1 !important; }
+
+/* Counter visibility */
+html[data-theme='dark'] .ftco-counter .text span,
+html[data-theme='dark'] .ftco-counter .text strong,
+html[data-theme='dark'] .number { color: #e2e8f0 !important; }
+
+/* Progress circles text */
+html[data-theme='dark'] .progress-value .h2,
+html[data-theme='dark'] .progress-value,
+html[data-theme='dark'] .progress .h2 { color: #e2e8f0 !important; }
+
+/* Theme toggle */
+#theme-toggle { border-radius: 999px; padding: 6px 10px; }
+#theme-toggle .fa-sun { display: none; }
+html[data-theme='dark'] #theme-toggle .fa-moon { display: none; }
+html[data-theme='dark'] #theme-toggle .fa-sun { display: inline-block; }
+
+/* Fine-tune hero overlays for clarity */
+.hero .overlay, .hero .overlay-1 { background: linear-gradient(180deg, rgba(2,6,23,0.2), rgba(2,6,23,0.55)); }
+
+/* Progress circles color alignment */
+.progress .progress-bar { border-color: var(--accent) !important; }

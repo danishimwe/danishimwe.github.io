@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Daniel Ishimwe</title>
+	<title>Daniel Ishimwe — Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portfolio of Daniel Ishimwe — System Engineer, Software Developer, and Cybersecurity enthusiast.">
+    <meta name="theme-color" content="#0f172a">
+
+    <meta property="og:title" content="Daniel Ishimwe — Portfolio">
+    <meta property="og:description" content="System Engineer, Software Developer, and Cybersecurity enthusiast.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://danishimwe.github.io/">
+    <meta property="og:image" content="images/bg_1.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Daniel Ishimwe — Portfolio">
+    <meta name="twitter:description" content="System Engineer, Software Developer, and Cybersecurity enthusiast.">
+    <meta name="twitter:image" content="images/bg_1.jpg">
 
 	<link rel="icon" href="images/favicon.png" type="image/png">
 	
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -21,6 +35,7 @@
 	
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/theme.css">
 	<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -34,13 +49,14 @@
 			</button>
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto">
+				<ul class="navbar-nav nav ml-auto align-items-center">
 					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
 					<li class="nav-item"><a href="#services-section" class="nav-link"><span>What I do</span></a></li>
 					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
 					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+					<li class="nav-item pl-2"><button id="theme-toggle" class="btn btn-sm btn-outline-primary" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button></li>
 				</ul>
 			</div>
 		</div>
@@ -57,9 +73,9 @@
 						</div>
 						<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
-								<span class="subheading">Hello! This is Daniel Ishimwe</span>
-								<h1 class="mb-4 mt-3">Experienced IT     Officer&amp; Specialist</h1>
-								<p><a href="https://linkedin.com/in/daniel-ishimwe-k" target="_blank" class="btn btn-primary">Linkedin</a> <a href="cv.html" class="btn btn-primary btn-outline-primary">Download CV</a></p>
+								<span class="subheading">Hello, I’m Daniel</span>
+								<h1 class="mb-4 mt-3">System Engineer, Software Developer, and Cybersecurity Enthusiast</h1>
+								<p><a href="https://linkedin.com/in/daniel-ishimwe-k" target="_blank" class="btn btn-primary">Connect on LinkedIn</a> <a href="cv.html" class="btn btn-primary btn-outline-primary">Download CV</a></p>
 							</div>
 						</div>
 					</div>
@@ -76,9 +92,9 @@
 						</div>
 						<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
-								<span class="subheading">System Engineer &amp; Software Developer   </span>
-								<h1 class="mb-4 mt-3">Hi, I am Daniel. This is my favorite work.</h1>
-								<p><a href="https://linkedin.com/in/daniel-ishimwe-k" target="_blank"  class="btn btn-primary">Linkedin</a> <a href="cv.html" class="btn btn-primary btn-outline-primary">Download CV</a></p>
+								<span class="subheading">System Engineer &amp; Software Developer</span>
+								<h1 class="mb-4 mt-3">Building secure, scalable, and user‑friendly systems</h1>
+								<p><a href="https://linkedin.com/in/daniel-ishimwe-k" target="_blank"  class="btn btn-primary">Connect on LinkedIn</a> <a href="cv.html" class="btn btn-primary btn-outline-primary">Download CV</a></p>
 							</div>
 						</div>
 					</div>
@@ -97,7 +113,7 @@
 						</div>
 						<div class="text">
 							<strong class="number" data-number="3">0</strong>
-							<span>Project Complete</span>
+							<span>Projects Completed</span>
 						</div>
 					</div>
 				</div>
@@ -119,7 +135,7 @@
 						</div>
 						<div class="text">
 							<strong class="number" data-number="7">0</strong>
-							<span>Years experienced</span>
+							<span>Years of Experience</span>
 						</div>
 					</div>
 				</div>
@@ -143,10 +159,7 @@
 							<div class="col-md-12 heading-section ftco-animate">
 								<span class="subheading">My Intro</span>
 								<h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About Me</h2>
-								<p align="justify">I am a seasoned IT professional with a rich background in IT management, system engineering, and software development, now diving into the dynamic world of cybersecurity. My core motivation lies in utilizing technology to solve complex problems and create systems that are not only effective but also secure and user-friendly. The recent shift towards cybersecurity in my career has added a vital layer to my skill set, allowing me to contribute significantly to safeguarding digital infrastructures against emerging threats. I hold a Bachelor's degree in Computer Application from Parul University, India. Currently, I am furthering my expertise by pursuing a Master's degree in Cybersecurity. This academic pursuit is not just about gaining certifications; it's about deepening my understanding and staying ahead in the fast-evolving tech world.
-
-#ITProfessional #SoftwareEngineer #SystemAdministration #Cybersecurity #Innovation #TechnologyEnthusiast
-</p>
+								<p align="justify">I’m an IT professional with a strong background in IT management, system engineering, and software development, now expanding into cybersecurity. I’m driven to solve complex problems and build secure, user‑friendly systems. I hold a Bachelor’s in Computer Applications (Parul University, India) and I’m currently pursuing a Master’s in Cybersecurity to deepen my expertise and stay ahead in a fast‑evolving field.</p>
 
 								<ul class="about-info mt-4 px-md-0 px-2">
 									<li class="d-flex"><div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="daniel-ishimwe-k" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://be.linkedin.com/in/daniel-ishimwe-k?trk=profile-badge"></a></div>
@@ -172,7 +185,7 @@
 										<div class="icon d-flex align-items-center justify-content-center">
 											<span class="flaticon-video-player"></span>
 										</div>
-										<div class="text">Movie</div>
+                            <div class="text">Movies</div>
 									</div>
 									<div class="interest-wrap d-flex align-items-center">
 										<div class="icon d-flex align-items-center justify-content-center">
@@ -194,8 +207,8 @@
 			<div class="row justify-content-center pb-5">
 				<div class="col-md-12 heading-section text-center ftco-animate">
 					<span class="subheading">Skills</span>
-					<h2 class="mb-4">My Skills</h2>
-					<p>Far far away, behind the word mountains, far from the countries India, Belgium and Malawi</p>
+					<h2 class="mb-4">Core Expertise</h2>
+					<p class="text-muted">A balanced mix of engineering, development, and operations.</p>
 				</div>
 			</div>
 			<div class="row progress-circle mb-5">
@@ -575,7 +588,7 @@
 						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-computer"></span></div>
 						<div class="media-body">
 							<h3 class="heading mb-3">Database Design</h3>
-							<p>Creating database structures that efficiently store, retrieve, and manage data..</p>
+							<p>Creating database structures that efficiently store, retrieve, and manage data.</p>
 						</div>
 					</div> 
 				</div>
@@ -584,7 +597,7 @@
 						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-vector"></span></div>
 						<div class="media-body">
 							<h3 class="heading mb-3">Software and System Installation</h3>
-							<p>nstalling, configuring, and updating software and operating systems.</p>
+							<p>Installing, configuring, and updating software and operating systems.</p>
 						</div>
 					</div> 
 				</div>
@@ -736,7 +749,7 @@
 								<div class="text">
 									<p class="mb-4 pl-5">Software Engineer</p>
 									<div class="d-flex align-items-center">
-										<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+										<div class="user-img" style="background-image: url(images/image_1.jpg)"></div>
 										<div class="pl-3">
 											<p class="name"><a href="https://paruluniversity.ac.in/" target="_blank">A - Z Software Systems</a></p>
 											<span class="position">Kigali - Rwanda</span>
@@ -886,6 +899,7 @@
 
 
 		<script src="js/jquery.min.js"></script>
+		<script>window.jQuery||(window.jQuery={});jQuery.migrateMute=true;</script>
 		<script src="js/jquery-migrate-3.0.1.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
@@ -896,8 +910,8 @@
 		<script src="js/jquery.magnific-popup.min.js"></script>
 		<script src="js/jquery.animateNumber.min.js"></script>
 		<script src="js/scrollax.min.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-		<script src="js/google-map.js"></script>
+		<script src="js/theme.js"></script>
+
 		
 		<script src="js/main.js"></script>
 
