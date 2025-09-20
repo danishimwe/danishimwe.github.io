@@ -1,919 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Daniel Ishimwe — Portfolio</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Portfolio of Daniel Ishimwe — System Engineer, Software Developer, and Cybersecurity enthusiast.">
-    <meta name="theme-color" content="#0f172a">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel Ishimwe — System Engineer & Software Developer</title>
+  <meta name="description" content="System Engineer, Software Developer, and Cybersecurity enthusiast delivering secure, performant digital experiences.">
+  <meta name="author" content="Daniel Ishimwe">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="canonical" href="https://danishimwe.github.io/">
 
-    <meta property="og:title" content="Daniel Ishimwe — Portfolio">
-    <meta property="og:description" content="System Engineer, Software Developer, and Cybersecurity enthusiast.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://danishimwe.github.io/">
-    <meta property="og:image" content="images/bg_1.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Daniel Ishimwe — Portfolio">
-    <meta name="twitter:description" content="System Engineer, Software Developer, and Cybersecurity enthusiast.">
-    <meta name="twitter:image" content="images/bg_1.jpg">
+  <meta property="og:title" content="Daniel Ishimwe — System Engineer & Software Developer">
+  <meta property="og:description" content="Secure, scalable, and user-friendly systems for teams that care about impact.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://danishimwe.github.io/">
+  <meta property="og:image" content="images/bg_1.jpg">
+  <meta property="og:site_name" content="Daniel Ishimwe Portfolio">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Daniel Ishimwe — System Engineer & Software Developer">
+  <meta name="twitter:description" content="System Engineer, Software Developer, and Cybersecurity enthusiast delivering secure, performant digital experiences.">
+  <meta name="twitter:image" content="images/bg_1.jpg">
 
-	<link rel="icon" href="images/favicon.png" type="image/png">
-	
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="images/bg_1.jpg" as="image">
+  <link rel="stylesheet" href="css/site.css">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    (function() {
+      var themeKey = 'theme-preference';
+      try {
+        var stored = localStorage.getItem(themeKey);
+        if (stored) {
+          document.documentElement.setAttribute('data-theme', stored);
+          return;
+        }
+      } catch (e) {}
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+    })();
+  </script>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
-	<link rel="stylesheet" href="css/animate.css">
-	
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/theme.css">
-	<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Daniel Ishimwe",
+      "jobTitle": "System Engineer",
+      "url": "https://danishimwe.github.io/",
+      "image": "https://danishimwe.github.io/images/about-1.jpg",
+      "sameAs": [
+        "https://linkedin.com/in/daniel-ishimwe-k",
+        "https://github.com/danishimwe",
+        "https://orcid.org/0009-0009-4257-2078"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Brussels",
+        "addressCountry": "Belgium"
+      },
+      "knowsAbout": [
+        "System engineering",
+        "Software development",
+        "Cybersecurity",
+        "Infrastructure automation"
+      ]
+    }
+  </script>
 </head>
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	
-	
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html">Daniel Ishimwe<span>.</span></a>
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
+<body>
+  <a class="skip-nav" href="#main-content">Skip to main content</a>
 
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto align-items-center">
-					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-					<li class="nav-item"><a href="#services-section" class="nav-link"><span>What I do</span></a></li>
-					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-					<li class="nav-item pl-2"><button id="theme-toggle" class="btn btn-sm btn-outline-primary" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<section id="home-section" class="hero">
-		<div class="home-slider owl-carousel">
-			<div class="slider-item">
-				<div class="overlay"></div>
-				<div class="container-fluid px-md-0">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						<div class="one-third order-md-last img" style="background-image:url(images/bg_1.jpg);">
-							<div class="overlay"></div>
-							<div class="overlay-1"></div>
-						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">Hello, I’m Daniel</span>
-								<h1 class="mb-4 mt-3">System Engineer, Software Developer, and Cybersecurity Enthusiast</h1>
-								<p><a href="https://linkedin.com/in/daniel-ishimwe-k" target="_blank" class="btn btn-primary">Connect on LinkedIn</a> <a href="cv.html" class="btn btn-primary btn-outline-primary">Download CV</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+  <header class="site-header" id="top" data-nav>
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Daniel Ishimwe home">
+        <span class="brand-mark" aria-hidden="true">DI</span>
+        <span class="brand-text">Daniel Ishimwe</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link" data-nav-link>Home</a></li>
+          <li><a href="#about" class="nav-link" data-nav-link>About</a></li>
+          <li><a href="#services" class="nav-link" data-nav-link>Services</a></li>
+          <li><a href="#skills" class="nav-link" data-nav-link>Skills</a></li>
+          <li><a href="#experience" class="nav-link" data-nav-link>Experience</a></li>
+          <li><a href="#projects" class="nav-link" data-nav-link>Projects</a></li>
+          <li><a href="#contact" class="nav-link" data-nav-link>Contact</a></li>
+          <li>
+            <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false" title="Switch to dark mode">
+              <span class="sr-only">Toggle dark mode</span>
+              <svg class="icon icon-moon" viewBox="0 0 24 24" role="presentation" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <svg class="icon icon-sun" viewBox="0 0 24 24" role="presentation" aria-hidden="true">
+                <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <line x1="12" y1="1.5" x2="12" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="12" y1="19.5" x2="12" y2="22.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="4.22" y1="4.22" x2="6.34" y2="6.34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="17.66" y1="17.66" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="1.5" y1="12" x2="4.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="19.5" y1="12" x2="22.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="4.22" y1="19.78" x2="6.34" y2="17.66" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="17.66" y1="6.34" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-			<div class="slider-item">
-				<div class="overlay"></div>
-				<div class="container-fluid px-md-0">
-					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						<div class="one-third order-md-last img" style="background-image:url(images/bg_2.jpg);">
-							<div class="overlay"></div>
-							<div class="overlay-1"></div>
-						</div>
-						<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">System Engineer &amp; Software Developer</span>
-								<h1 class="mb-4 mt-3">Building secure, scalable, and user‑friendly systems</h1>
-								<p><a href="https://linkedin.com/in/daniel-ishimwe-k" target="_blank"  class="btn btn-primary">Connect on LinkedIn</a> <a href="cv.html" class="btn btn-primary btn-outline-primary">Download CV</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+  <main id="main-content">
+    <section id="home" class="hero section" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">System Engineer · Software Developer · Cybersecurity Enthusiast</p>
+          <h1 id="hero-title">Building secure, scalable, and user-friendly systems that people trust.</h1>
+          <p class="hero__lead">I bridge infrastructure, software development, and cybersecurity to help organizations deliver resilient products faster. From automating platform operations to optimising application experiences, I focus on creating measurable impact for engineering teams and their users.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="cv.html">Download CV</a>
+            <a class="btn btn--ghost" href="#contact">Work with me</a>
+          </div>
+          <ul class="hero__highlights" role="list">
+            <li>Infrastructure automation & cloud-native delivery</li>
+            <li>Full-stack application design & integration</li>
+            <li>Security-first approach grounded in academic research</li>
+          </ul>
+        </div>
+        <figure class="hero__media">
+          <picture>
+            <source srcset="images/about-1.jpg" type="image/jpeg">
+            <img src="images/about-1.jpg" alt="Portrait of Daniel Ishimwe" width="560" height="640" loading="eager" fetchpriority="high">
+          </picture>
+          <figcaption class="sr-only">Daniel Ishimwe</figcaption>
+        </figure>
+      </div>
+    </section>
 
-	<section class="ftco-counter img bg-light" id="section-counter">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 d-flex">
-						<div class="icon d-flex justify-content-center align-items-center">
-							<span class="flaticon-suitcase"></span>
-						</div>
-						<div class="text">
-							<strong class="number" data-number="3">0</strong>
-							<span>Projects Completed</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 d-flex">
-						<div class="icon d-flex justify-content-center align-items-center">
-							<span class="flaticon-loyalty"></span>
-						</div>
-						<div class="text">
-							<strong class="number" data-number="2"></strong>
-							<span>Degrees</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 d-flex">
-						<div class="icon d-flex justify-content-center align-items-center">
-							<span class="flaticon-calendar"></span>
-						</div>
-						<div class="text">
-							<strong class="number" data-number="7">0</strong>
-							<span>Years of Experience</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <section id="highlights" class="section section--alt" aria-label="Key highlights">
+      <div class="container">
+        <div class="section-header">
+          <h2>At a glance</h2>
+          <p class="section-lead">A proven track record combining academic research, industry experience, and hands-on delivery.</p>
+        </div>
+        <div class="metric-grid">
+          <article class="metric-card">
+            <p class="metric-card__value">7<span aria-hidden="true">+</span></p>
+            <p class="metric-card__label">Years delivering secure infrastructure and software solutions</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-card__value">3</p>
+            <p class="metric-card__label">Major platforms launched across public and private sectors</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-card__value">2</p>
+            <p class="metric-card__label">Degrees in Computer Applications and Cybersecurity</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-	<section class="ftco-about ftco-section ftco-no-pt ftco-no-pb" id="about-section">
-		<div class="container">
-			<div class="row d-flex no-gutters"  id="about_me">
-				<div class="col-md-6 col-lg-5 d-flex">
-					<div class="img-about img d-flex align-items-stretch">
-						<div class="overlay"></div>
-						<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about-1.jpg);">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-7 pl-md-4 pl-lg-5 py-5">
-					<div class="py-md-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								<span class="subheading">My Intro</span>
-								<h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About Me</h2>
-								<p align="justify">I’m an IT professional with a strong background in IT management, system engineering, and software development, now expanding into cybersecurity. I’m driven to solve complex problems and build secure, user‑friendly systems. I hold a Bachelor’s in Computer Applications (Parul University, India) and I’m currently pursuing a Master’s in Cybersecurity to deepen my expertise and stay ahead in a fast‑evolving field.</p>
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container two-column">
+        <div>
+          <h2 id="about-title" class="section-title">About</h2>
+          <p>I am an IT professional based in Brussels with a background that connects IT management, system engineering, and full-stack development. Currently pursuing a Master&rsquo;s in Cybersecurity, I help teams implement secure systems while keeping user experience front and center.</p>
+          <p>My career spans public agencies, research institutions, and startups. Whether modernising infrastructure or building new digital products, I combine strategic thinking with hands-on engineering to keep projects moving smoothly.</p>
+          <ul class="checklist" role="list">
+            <li>Security-aware architecture and implementation</li>
+            <li>Automation that accelerates delivery without sacrificing reliability</li>
+            <li>Collaborative leadership across cross-functional teams</li>
+          </ul>
+          <div class="about-callout">
+            <div>
+              <p class="about-callout__title">Where I work</p>
+              <p class="about-callout__body">Brussels, Belgium &middot; Available for on-site and remote engagements across Europe.</p>
+            </div>
+            <a class="btn btn--ghost" href="https://linkedin.com/in/daniel-ishimwe-k" target="_blank" rel="noopener">Connect on LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="daniel-ishimwe-k" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://be.linkedin.com/in/daniel-ishimwe-k?trk=profile-badge"></a></div>
-									<li class="d-flex"><span>Address:</span> <span>Bruxelles - Belgium</span></li></li>
-								</ul>
-              
-							</div>
-							<div class="col-md-12">
-								<div class="my-interest d-lg-flex w-100">
-									<div class="interest-wrap d-flex align-items-center">
-										<div class="icon d-flex align-items-center justify-content-center">
-											<span class="flaticon-listening"></span>
-										</div>
-										<div class="text">Music &amp; Singing</div>
-									</div>
-									<div class="interest-wrap d-flex align-items-center">
-										<div class="icon d-flex align-items-center justify-content-center">
-											<span class="fas fa-swimmer"></span>
-										</div>
-										<div class="text">Swimming</div>
-									</div>
-									<div class="interest-wrap d-flex align-items-center">
-										<div class="icon d-flex align-items-center justify-content-center">
-											<span class="flaticon-video-player"></span>
-										</div>
-                            <div class="text">Movies</div>
-									</div>
-									<div class="interest-wrap d-flex align-items-center">
-										<div class="icon d-flex align-items-center justify-content-center">
-											<span class="flaticon-football"></span>
-										</div>
-										<div class="text">Playing with Kids</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<section class="ftco-section bg-light" id="skills-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<span class="subheading">Skills</span>
-					<h2 class="mb-4">Core Expertise</h2>
-					<p class="text-muted">A balanced mix of engineering, development, and operations.</p>
-				</div>
-			</div>
-			<div class="row progress-circle mb-5">
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">Java</h2>
+    <section id="services" class="section section--alt" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="services-title">How I can help</h2>
+          <p class="section-lead">Delivering end-to-end value from architecture through operations with measurable business outcomes.</p>
+        </div>
+        <div class="card-grid">
+          <article class="service-card">
+            <h3>Systems Engineering</h3>
+            <p>Designing resilient infrastructure that scales with demand, backed by strong observability and governance.</p>
+          </article>
+          <article class="service-card">
+            <h3>Full-Stack Development</h3>
+            <p>Building accessible, performant applications using modern frameworks and rigorous testing practices.</p>
+          </article>
+          <article class="service-card">
+            <h3>Cybersecurity Readiness</h3>
+            <p>Embedding security principles into every project stage, from threat modelling to secure deployment pipelines.</p>
+          </article>
+          <article class="service-card">
+            <h3>Database Architecture</h3>
+            <p>Designing and maintaining data platforms that keep information reliable, accessible, and protected.</p>
+          </article>
+          <article class="service-card">
+            <h3>Automation &amp; Tooling</h3>
+            <p>Introducing CI/CD, configuration management, and infrastructure-as-code workflows that boost team velocity.</p>
+          </article>
+          <article class="service-card">
+            <h3>Technical Enablement</h3>
+            <p>Partnering with stakeholders to translate technical requirements into clear roadmaps and actionable plans.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='74'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">74<sup class="small">%</sup></div>
-							</div>
-						</div>
-						<!-- END -->
-					</div>
-				</div>
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="skills-title">Core expertise</h2>
+          <p class="section-lead">A balanced toolkit spanning software engineering, automation, and data management.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skills-card">
+            <h3>Software Engineering</h3>
+            <p>Programming languages and practices for building maintainable products.</p>
+            <ul class="tag-list" role="list">
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>PHP</li>
+              <li>C / C++</li>
+              <li>HTML &amp; CSS</li>
+            </ul>
+          </article>
+          <article class="skills-card">
+            <h3>Data Platforms</h3>
+            <p>Structured and unstructured data solutions that keep insights flowing.</p>
+            <ul class="tag-list" role="list">
+              <li>MySQL</li>
+              <li>MongoDB</li>
+              <li>Data modelling</li>
+              <li>Performance tuning</li>
+            </ul>
+          </article>
+          <article class="skills-card">
+            <h3>Infrastructure &amp; Automation</h3>
+            <p>Tooling that powers reliable delivery across environments.</p>
+            <ul class="tag-list" role="list">
+              <li>Docker</li>
+              <li>Vagrant</li>
+              <li>Ansible</li>
+              <li>Git</li>
+              <li>Secure remote access (PuTTY / SSH)</li>
+            </ul>
+          </article>
+          <article class="skills-card">
+            <h3>Collaboration &amp; Delivery</h3>
+            <p>Working across disciplines to drive clarity and momentum.</p>
+            <ul class="tag-list" role="list">
+              <li>Technical leadership</li>
+              <li>Stakeholder alignment</li>
+              <li>Lean delivery practices</li>
+              <li>Continuous improvement</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">PHP</h2>
+    <section id="experience" class="section section--alt" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="experience-title">Experience &amp; education</h2>
+          <p class="section-lead">Blending academic research with hands-on delivery across Europe and Africa.</p>
+        </div>
+        <div class="timeline" role="list">
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <h3>IT Specialist &mdash; KU Leuven (COSIC)</h3>
+              <p class="timeline-meta">Heverlee, Leuven &middot; Enabling cryptography research teams with secure infrastructure and responsive support.</p>
+            </div>
+          </article>
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <h3>Master of Cybersecurity &mdash; Universit&eacute; Libre de Bruxelles</h3>
+              <p class="timeline-meta">Brussels, Belgium &middot; Advancing expertise in defensive security, privacy, and risk management.</p>
+            </div>
+          </article>
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <h3>System Engineer &mdash; Mitra Systems</h3>
+              <p class="timeline-meta">Blantyre, Malawi &middot; Modernised infrastructure and improved service reliability for enterprise clients.</p>
+            </div>
+          </article>
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <h3>IT Officer &mdash; Rwanda Revenue Authority</h3>
+              <p class="timeline-meta">Kigali, Rwanda &middot; Supported mission-critical systems and streamlined internal support workflows.</p>
+            </div>
+          </article>
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <h3>Bachelor of Computer Applications &mdash; Parul University</h3>
+              <p class="timeline-meta">Vadodara, India &middot; Graduated with a focus on software engineering and emerging technologies.</p>
+            </div>
+          </article>
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <h3>Founder &amp; CEO &mdash; Stay Serase</h3>
+              <p class="timeline-meta">Kigali, Rwanda &middot; Led a hospitality startup, overseeing technology, operations, and customer experience.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='72'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">72<sup class="small">%</sup></div>
-							</div>
-						</div>
-						<!-- END -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="projects-title">Selected projects</h2>
+          <p class="section-lead">A snapshot of recent work focused on transformation, governance, and usability.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <figure class="project-card__media">
+              <img src="images/work-1.jpg" alt="Preview of the Bus Reservation System interface" width="480" height="320" loading="lazy">
+            </figure>
+            <div class="project-card__content">
+              <h3>Bus Reservation System</h3>
+              <p>Unified mobile and web booking experience managing fleet operations, seat inventory, and payments with real-time updates.</p>
+              <p class="project-card__meta">Platform: Mobile &amp; Web Application</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <figure class="project-card__media">
+              <img src="images/work-2.jpg" alt="Blockchain voting system concept" width="480" height="320" loading="lazy">
+            </figure>
+            <div class="project-card__content">
+              <h3>Blockchain-Based Voting</h3>
+              <p>Secure digital voting prototype leveraging blockchain for auditability, voter anonymity, and end-to-end transparency.</p>
+              <p class="project-card__meta">Platform: Mobile &amp; Web Application</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <figure class="project-card__media">
+              <img src="images/dblp.png" alt="DBLP publications retriever dashboard" width="480" height="320" loading="lazy">
+            </figure>
+            <div class="project-card__content">
+              <h3>DBLP Publications Retriever</h3>
+              <p>Research tooling that aggregates computer science publications and analytics to simplify academic discovery.</p>
+              <p class="project-card__meta">Platform: Web Application</p>
+              <a class="project-card__link" href="https://github.com/danishimwe/dblp-publications-retrieval" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-						
-					</div>
-				</div>
+    <section id="contact" class="section section--alt" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-header section-header--left">
+            <h2 id="contact-title">Let&rsquo;s build something great</h2>
+            <p class="section-lead">Share your challenges and I&rsquo;ll help you design a path forward. I welcome consulting, contract, and full-time conversations.</p>
+          </div>
+          <p class="contact-intro">Prefer email? I typically respond within one business day.</p>
+          <a class="btn btn--primary" href="mailto:danish02174@gmail.com">danish02174@gmail.com</a>
+        </div>
+        <div class="contact-links">
+          <article class="contact-card">
+            <h3>Email</h3>
+            <a href="mailto:danish02174@gmail.com">danish02174@gmail.com</a>
+          </article>
+          <article class="contact-card">
+            <h3>LinkedIn</h3>
+            <a href="https://linkedin.com/in/daniel-ishimwe-k" target="_blank" rel="noopener">linkedin.com/in/daniel-ishimwe-k</a>
+          </article>
+          <article class="contact-card">
+            <h3>GitHub</h3>
+            <a href="https://github.com/danishimwe" target="_blank" rel="noopener">github.com/danishimwe</a>
+          </article>
+          <article class="contact-card">
+            <h3>Research</h3>
+            <a href="https://orcid.org/0009-0009-4257-2078" target="_blank" rel="noopener">ORCID: 0009-0009-4257-2078</a>
+            <a href="https://researchgate.net/profile/Daniel-Ishimwe" target="_blank" rel="noopener">ResearchGate profile</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">Javascript</h2>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; <span id="current-year"></span> Daniel Ishimwe. Crafted with care in Brussels.</p>
+      <nav aria-label="Footer">
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="back-to-top" href="#top">Back to top</a>
+    </div>
+  </footer>
 
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='68'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">68<sup class="small">%</sup></div>
-							</div>
-						</div>
-						<!-- END -->
-
-						
-					</div>
-				</div>
-
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">HTML</h2>
-
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='92'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">92<sup class="small">%</sup></div>
-							</div>
-						</div>
-						<!-- END -->
-
-						
-					</div>
-				</div>
-
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">CSS</h2>
-
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='83'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">83<sup class="small">%</sup></div>
-							</div>
-						</div>
-						<!-- END -->
-
-						
-					</div>
-				</div>
-
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">MySQL</h2>
-
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='78'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">78<sup class="small">%</sup></div>
-							</div>
-						</div>
-						<!-- END -->
-
-						
-					</div>
-				</div>
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">MongoDB</h2>
-
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='74'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">74<sup class="small">%</sup></div>
-							</div>
-						</div>
-						<!-- END -->
-
-						
-					</div>
-				</div>
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">C</h2>
-
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='69'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">69<sup class="small">%</sup></div>
-							</div>
-						</div>
-						<!-- END -->
-
-						
-					</div>
-				</div>
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">C++</h2>
-
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='69'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">69<sup class="small">%</sup></div>
-							</div>
-						</div>
-						<!-- END -->
-
-						
-					</div>
-				</div>
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">Python</h2>
-
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='81'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">81<sup class="small">%</sup></div>
-							</div>
-						</div>
-						<!-- END -->
-
-						
-					</div>
-				</div>
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">Git</h2>
-
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='83'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">83<sup class="small">%</sup></div>
-							</div>
-						</div>
-						<!-- END -->
-
-						
-					</div>
-				</div>
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">Putty</h2>
-
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='54'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">54<sup class="small">%</sup></div>
-							</div>
-						</div>
-						<!-- END -->
-
-						
-					</div>
-				</div>
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">Docker</h2>
-
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='69'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">69<sup class="small">%</sup></div>
-							</div>
-						</div>
-						<!-- END -->
-
-						
-					</div>
-				</div>
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">Vagrant</h2>
-
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='84'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">84<sup class="small">%</sup></div>
-							</div>
-						</div>
-						<!-- END -->
-
-						
-					</div>
-				</div>
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">Ansible</h2>
-
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='57'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">57<sup class="small">%</sup></div>
-							</div>
-						</div>
-						<!-- END -->
-
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section" id="services-section">
-		<div class="container" id="services">
-			<div class="row justify-content-center">
-				<div class="col-md-12 heading-section text-center ftco-animate mb-5">
-					<span class="subheading">I am great at</span>
-					<h2 class="mb-4">I do awesome services for organizations and clients</h2>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-6 col-lg-3" id="web_design">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-3d-design"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Web Design</h3>
-							<p>Crafting visually appealing and user-friendly websites that enhance user experience.</p>
-						</div>
-					</div> 
-				</div>
-				<div class="col-md-6 col-lg-3" id="web_application">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-app-development"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Web Application</h3>
-							<p>Developing dynamic, interactive applications that operate via web browsers.</p>
-						</div>
-					</div> 
-				</div>
-				<div class="col-md-6 col-lg-3" id="web_development">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-web-programming"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Web Development</h3>
-							<p>Building and maintaining websites, involving both front-end and back-end development.</p>
-						</div>
-					</div> 
-				</div>
-				<div class="col-md-6 col-lg-3" id="database_management">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-branding"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Database Management</h3>
-							<p>Administering databases to ensure they are organized, efficient, and secure. </p>
-						</div>
-					</div> 
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-6 col-lg-3" id="database_design">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-computer"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Database Design</h3>
-							<p>Creating database structures that efficiently store, retrieve, and manage data.</p>
-						</div>
-					</div> 
-				</div>
-				<div class="col-md-6 col-lg-3" id="soft_syst_install">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-vector"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Software and System Installation</h3>
-							<p>Installing, configuring, and updating software and operating systems.</p>
-						</div>
-					</div> 
-				</div>
-				<div class="col-md-6 col-lg-3" id="data_storage">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-vector"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Data Storage</h3>
-							<p>Implementing solutions to store, manage, and safeguard large volumes of data.</p>
-						</div>
-					</div> 
-				</div>
-				<div class="col-md-6 col-lg-3" id="it_support">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-zoom"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">IT Support</h3>
-							<p>Providing technical assistance and support for issues related to computer systems, hardware, and software.</p>
-						</div>
-					</div> 
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section ftco-project" id="projects-section">
-		<div class="container-fluid px-md-4" id="projects">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<span class="subheading">Accomplishments</span>
-					<h2 class="mb-4">My Projects</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-1.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Bus Reservation System</a></h3>
-							<span>Mobile &amp; Web App</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-2.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Online Blockchain Based Voting System</a></h3>
-							<span>Mobile &amp; Web App</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/dblp.png);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="https://github.com/danishimwe/dblp-publications-retrieval" target="_blank">DBLP Publications Retriever</a></h3>
-							<span>Web App</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section testimony-section bg-primary">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section heading-section-white text-center ftco-animate">
-					<span class="subheading">Experience</span>
-					<h2 class="mb-4">Academic and Professional Experience</h2>
-				</div>
-			</div>
-			<div class="row ftco-animate">
-				<div class="col-md-12">
-					<div class="carousel-testimony owl-carousel">
-						<div class="item">
-							<div class="testimony-wrap py-4">
-								<div class="text">
-									<p class="mb-4 pl-5">Master of Cybersecurity</p>
-									<div class="d-flex align-items-center">
-										<div class="user-img" style="background-image: url(images/ulb.jpg)"></div>
-										<div class="pl-3">
-											<p class="name"><a href="https://www.ulb.be/en" target="_blank">Université Libre de Bruxelles</a></p>
-											<span class="position">Bruxelles - Belgium</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap py-4">
-								<div class="text">
-									<p class="mb-4 pl-5">Bachelor of Computer Application</p>
-									<div class="d-flex align-items-center">
-										<div class="user-img" style="background-image: url(images/parul.png)"></div>
-										<div class="pl-3">
-											<p class="name"><a href="https://paruluniversity.ac.in/" target="_blank">Parul University</a></p>
-											<span class="position">Vadodare - India</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap py-4">
-								<div class="text">
-									<p class="mb-4 pl-5">IT Specialist</p>
-									<div class="d-flex align-items-center">
-										<div class="user-img" style="background-image: url(images/ku_leuven.png)"></div>
-										<div class="pl-3">
-											<p class="name"><a href="https://www.esat.kuleuven.be/" target="_blank">KU Leuven - COSIC</a></p>
-											<span class="position">Heverlee, Leuven - Belgium</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap py-4">
-								<div class="text">
-									<p class="mb-4 pl-5">IT Officer</p>
-									<div class="d-flex align-items-center">
-										<div class="user-img" style="background-image: url(images/rra.png)"></div>
-										<div class="pl-3">
-											<p class="name"><a href="https://www.rra.gov.rw/en/home" target="_blank">Rwanda Revenue Authority</a></p>
-											<span class="position">Kigali - Rwanda</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap py-4">
-								<div class="text">
-									<p class="mb-4 pl-5">System Engineer</p>
-									<div class="d-flex align-items-center">
-										<div class="user-img" style="background-image: url(images/mitra_systems.jpeg)"></div>
-										<div class="pl-3">
-											<p class="name"><a href="https://www.mitra.mw/" target="_blank">Mitra Systems</a></p>
-											<span class="position">Blantyre - Malawi</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap py-4">
-								<div class="text">
-									<p class="mb-4 pl-5">Software Engineer</p>
-									<div class="d-flex align-items-center">
-										<div class="user-img" style="background-image: url(images/image_1.jpg)"></div>
-										<div class="pl-3">
-											<p class="name"><a href="https://paruluniversity.ac.in/" target="_blank">A - Z Software Systems</a></p>
-											<span class="position">Kigali - Rwanda</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap py-4">
-								<div class="text">
-									<p class="mb-4 pl-5">Chief Executive Officer</p>
-									<div class="d-flex align-items-center">
-										<div class="user-img" style="background-image: url(images/stayserase.jpg)"></div>
-										<div class="pl-3">
-											<p class="name"><a href="https://paruluniversity.ac.in/" target="_blank">StaysErase</a></p>
-											<span class="position">World Wide</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-		<div class="container" id="contact_me">
-			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<span class="subheading">Contact me</span>
-					<h2 class="mb-4">Want to connect?</h2>
-				</div>
-			</div>
-
-			<div class="row block-9">
-				<div class="col-md-8">
-					<div class="row">
-						<div class="dbox w-100 d-flex">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="fa fa-globe"></span>
-							</div>
-							<div class="text">
-								<p><span>Linkedin:</span><a href="https://linkedin.com/in/daniel-ishimwe-k" target="_blank">daniel-ishimwe-k</a></p>
-							</div>
-						</div>
-						<div class="dbox w-100 d-flex">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="fa fa-globe"></span>
-							</div>
-							<div class="text">
-								<p><span>ORCid:</span> <a href="https://orcid.org/0009-0009-4257-2078" target="_blank">0009-0009-4257-2078</a></p>
-							</div>
-						</div>
-						<div class="dbox w-100 d-flex">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="fa fa-globe"></span>
-							</div>
-							<div class="text">
-								<p><span>ResearchGate:</span> <a href="https://researchgate.net/profile/Daniel-Ishimwe" target="_blank">Daniel-Ishimwe</a></p>
-							</div>
-						</div>
-						<div class="dbox w-100 d-flex">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="fa fa-globe"></span>
-							</div>
-							<div class="text">
-								<p><span>GitHub</span> <a href="https://github.com/danishimwe" target="_blank">danishimwe</a></p>
-							</div>
-						</div>
-					</div>
-					
-				</div>
-
-				<div class="col-md-4 d-flex pl-md-5">
-					<div class="row">
-						<div class="dbox w-100 d-flex">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="fa fa-map-marker"></span>
-							</div>
-							<div class="text">
-								<p><span>Address:</span> Bruxelles - Belgium</p>
-							</div>
-						</div>
-						<div class="dbox w-100 d-flex">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="fa fa-paper-plane"></span>
-							</div>
-							<div class="text">
-								<p><span>Email:</span> <a href="mailto:danish02174@gmail.com" target="_blank">Send me a message</a></p>
-							</div>
-						</div>
-						<div class="dbox w-100 d-flex">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="fa fa-globe"></span>
-							</div>
-							<div class="text">
-								<p><span>Website</span> <a href="https://stayserase.com" target="_blank">stayserase.com</a></p>
-							</div>
-						</div>
-					</div>
-					<!-- <div id="map" class="map"></div> -->
-				</div>
-			</div>
-		</div>
-	</section>
-	
-
-	<footer class="ftco-footer ftco-section">
-		<div class="container">
-			<div class="row mb-5">
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4 ml-md-4">
-						<h2 class="ftco-heading-2">Links</h2>
-						<ul class="list-unstyled">
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Home</a></li>
-							<li><a href="#about_me"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
-							<li><a href="#services-section"><span class="fa fa-chevron-right mr-2"></span>Services</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4 ml-md-4">
-						<h2 class="ftco-heading-2">...</h2>
-						<ul class="list-unstyled">
-							<li><a href="#projects-section"><span class="fa fa-chevron-right mr-2"></span>Projects</a></li>
-							<li><a href="#contact-section"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved<i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://linkedin.com/in/daniel-ishimwe-k" target="_blank">Daniel Ishimwe</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-		
-		
-
-		<!-- loader -->
-		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-		<script src="js/jquery.min.js"></script>
-		<script>window.jQuery||(window.jQuery={});jQuery.migrateMute=true;</script>
-		<script src="js/jquery-migrate-3.0.1.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.easing.1.3.js"></script>
-		<script src="js/jquery.waypoints.min.js"></script>
-		<script src="js/jquery.stellar.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/jquery.animateNumber.min.js"></script>
-		<script src="js/scrollax.min.js"></script>
-		<script src="js/theme.js"></script>
-
-		
-		<script src="js/main.js"></script>
-
-	</body>
-	</html>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

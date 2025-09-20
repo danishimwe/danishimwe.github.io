@@ -1,121 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Daniel Ishimwe — CV</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel Ishimwe — Curriculum Vitae</title>
+  <meta name="description" content="Download and view the curriculum vitae of Daniel Ishimwe, System Engineer and Cybersecurity enthusiast.">
+  <meta name="robots" content="noindex,follow">
+  <meta name="theme-color" content="#0f172a">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
 
-	<link rel="stylesheet" href="css/animate.css">
-	
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/theme.css">
+  <script>
+    (function() {
+      var themeKey = 'theme-preference';
+      try {
+        var stored = localStorage.getItem(themeKey);
+        if (stored) {
+          document.documentElement.setAttribute('data-theme', stored);
+          return;
+        }
+      } catch (e) {}
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+    })();
+  </script>
 </head>
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	
-	
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html">Daniel Ishimwe<span>.</span></a>
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
+<body>
+  <a class="skip-nav" href="#main-content">Skip to main content</a>
 
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto align-items-center">
-					<li class="nav-item"><a href="index.html" class="nav-link"><span>Home</span></a></li>
-					<li class="nav-item"><a href="index.html#about_me" class="nav-link"><span>About</span></a></li>
-					<li class="nav-item"><a href="index.html#skills-section" class="nav-link"><span>Skills</span></a></li>
-					<li class="nav-item"><a href="index.html#services-section" class="nav-link"><span>What I do</span></a></li>
-					<li class="nav-item"><a href="index.html#projects-section" class="nav-link"><span>Projects</span></a></li>
-					<li class="nav-item"><a href="index.html#contact-section" class="nav-link"><span>Contact</span></a></li>
-					<li class="nav-item pl-2"><button id="theme-toggle" class="btn btn-sm btn-outline-primary" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+  <header class="site-header" id="top" data-nav>
+    <div class="container header-inner">
+      <a class="brand" href="index.html#home" aria-label="Back to home">
+        <span class="brand-mark" aria-hidden="true">DI</span>
+        <span class="brand-text">Daniel Ishimwe</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html#home" class="nav-link" data-nav-link>Home</a></li>
+          <li><a href="index.html#about" class="nav-link" data-nav-link>About</a></li>
+          <li><a href="index.html#services" class="nav-link" data-nav-link>Services</a></li>
+          <li><a href="index.html#skills" class="nav-link" data-nav-link>Skills</a></li>
+          <li><a href="index.html#experience" class="nav-link" data-nav-link>Experience</a></li>
+          <li><a href="index.html#projects" class="nav-link" data-nav-link>Projects</a></li>
+          <li><a href="index.html#contact" class="nav-link" data-nav-link>Contact</a></li>
+          <li>
+            <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false" title="Switch to dark mode">
+              <span class="sr-only">Toggle dark mode</span>
+              <svg class="icon icon-moon" viewBox="0 0 24 24" role="presentation" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <svg class="icon icon-sun" viewBox="0 0 24 24" role="presentation" aria-hidden="true">
+                <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <line x1="12" y1="1.5" x2="12" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="12" y1="19.5" x2="12" y2="22.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="4.22" y1="4.22" x2="6.34" y2="6.34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="17.66" y1="17.66" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="1.5" y1="12" x2="4.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="19.5" y1="12" x2="22.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="4.22" y1="19.78" x2="6.34" y2="17.66" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="17.66" y1="6.34" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-	<section class="ftco-about ftco-section ftco-no-pt ftco-no-pb" id="about-section">
-		<div class="container">
-			<div class="row d-flex no-gutters"  id="about_me">
-				<div class="col-md-6 col-lg-7 pl-md-4 pl-lg-5 py-5">
-					<div class="py-md-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								<embed src="files/Daniel Ishimwe-cv.pdf" type="application/pdf" width="150%" height="700px" />
-                            </div>
-                            <p><a href="files/Daniel Ishimwe-cv.pdf" download="My_CV.pdf" class="btn btn-primary btn-outline-primary" target="_blank">Download CV</a></p>
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+  <main id="main-content">
+    <section id="resume" class="section" aria-labelledby="resume-title">
+      <div class="container">
+        <div class="section-header">
+          <h1 id="resume-title">Curriculum Vitae</h1>
+          <p class="section-lead">Download or view my latest CV for a detailed look at my experience, education, and certifications.</p>
+        </div>
+        <div class="resume-actions hero__actions">
+          <a class="btn btn--primary" href="files/Daniel Ishimwe-cv.pdf" download="Daniel-Ishimwe-CV.pdf">Download PDF</a>
+          <a class="btn btn--ghost" href="mailto:danish02174@gmail.com">Request updated copy</a>
+        </div>
+        <div class="resume-viewer" aria-label="CV preview">
+          <object data="files/Daniel Ishimwe-cv.pdf" type="application/pdf" width="100%" height="960">
+            <p>Your browser can&rsquo;t display the PDF inline. <a href="files/Daniel Ishimwe-cv.pdf" target="_blank" rel="noopener">Open the CV in a new tab</a>.</p>
+          </object>
+        </div>
+      </div>
+    </section>
 
+    <section id="resume-meta" class="section section--alt" aria-labelledby="resume-meta-title">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-header section-header--left">
+            <h2 id="resume-meta-title">Need more information?</h2>
+            <p class="section-lead">If you&rsquo;re interested in references, portfolio walkthroughs, or customised documentation, feel free to reach out directly.</p>
+          </div>
+        </div>
+        <div class="contact-links">
+          <article class="contact-card">
+            <h3>Email</h3>
+            <a href="mailto:danish02174@gmail.com">danish02174@gmail.com</a>
+          </article>
+          <article class="contact-card">
+            <h3>LinkedIn</h3>
+            <a href="https://linkedin.com/in/daniel-ishimwe-k" target="_blank" rel="noopener">linkedin.com/in/daniel-ishimwe-k</a>
+          </article>
+          <article class="contact-card">
+            <h3>GitHub</h3>
+            <a href="https://github.com/danishimwe" target="_blank" rel="noopener">github.com/danishimwe</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
-	<footer class="ftco-footer ftco-section">
-		<div class="container">
-			<div class="row mb-5">
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4 ml-md-4">
-						<h2 class="ftco-heading-2">Links</h2>
-						<ul class="list-unstyled">
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Home</a></li>
-							<li><a href="#about_me"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
-							<li><a href="#services-section"><span class="fa fa-chevron-right mr-2"></span>Services</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4 ml-md-4">
-						<h2 class="ftco-heading-2">...</h2>
-						<ul class="list-unstyled">
-							<li><a href="#projects-section"><span class="fa fa-chevron-right mr-2"></span>Projects</a></li>
-							<li><a href="#contact-section"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; <span id="current-year"></span> Daniel Ishimwe. Crafted with care in Brussels.</p>
+      <nav aria-label="Footer">
+        <ul class="footer-nav">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="back-to-top" href="#top">Back to top</a>
+    </div>
+  </footer>
 
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved<i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://linkedin.com/in/daniel-ishimwe-k" target="_blank">Daniel Ishimwe</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-		
-		
-
-		<!-- loader -->
-		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-		<script src="js/jquery.min.js"></script>
-		<script>window.jQuery||(window.jQuery={});jQuery.migrateMute=true;</script>
-		<script src="js/jquery-migrate-3.0.1.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.easing.1.3.js"></script>
-		<script src="js/jquery.waypoints.min.js"></script>
-		<script src="js/jquery.stellar.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/jquery.animateNumber.min.js"></script>
-		<script src="js/scrollax.min.js"></script>
-		<script src="js/theme.js"></script>
-		
-		<script src="js/main.js"></script>
-		
-	</body>
-	</html>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
