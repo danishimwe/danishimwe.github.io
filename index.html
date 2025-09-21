@@ -25,7 +25,7 @@
   <link rel="icon" href="images/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="preload" href="images/bg_1.jpg" as="image">
   <link rel="stylesheet" href="css/site.css">
 
@@ -91,6 +91,8 @@
           <li><a href="#home" class="nav-link" data-nav-link>Home</a></li>
           <li><a href="#about" class="nav-link" data-nav-link>About</a></li>
           <li><a href="#services" class="nav-link" data-nav-link>Services</a></li>
+          <li><a href="#craft" class="nav-link" data-nav-link>Craft</a></li>
+          <li><a href="#toolkit" class="nav-link" data-nav-link>Toolkit</a></li>
           <li><a href="#skills" class="nav-link" data-nav-link>Skills</a></li>
           <li><a href="#experience" class="nav-link" data-nav-link>Experience</a></li>
           <li><a href="#projects" class="nav-link" data-nav-link>Projects</a></li>
@@ -123,6 +125,10 @@
     <section id="home" class="hero section" aria-labelledby="hero-title">
       <div class="container hero__inner">
         <div class="hero__content">
+          <div class="hero__badge" role="note">
+            <span class="hero__badge-led" aria-hidden="true"></span>
+            <span class="hero__badge-text">Designing with code since 2016</span>
+          </div>
           <p class="eyebrow">System Engineer · Software Developer · Cybersecurity Enthusiast</p>
           <h1 id="hero-title">Building secure, scalable, and user-friendly systems that people trust.</h1>
           <p class="hero__lead">I bridge infrastructure, software development, and cybersecurity to help organizations deliver resilient products faster. From automating platform operations to optimising application experiences, I focus on creating measurable impact for engineering teams and their users.</p>
@@ -138,10 +144,30 @@
         </div>
         <figure class="hero__media">
           <picture>
-            <source srcset="images/about-1.jpg" type="image/jpeg">
-            <img src="images/about-1.jpg" alt="Portrait of Daniel Ishimwe" width="560" height="640" loading="eager" fetchpriority="high">
+            <source srcset="images/bg_1.png" type="image/png">
+            <img src="images/bg_1.png" alt="Portrait of Daniel Ishimwe" width="560" height="640" loading="eager" fetchpriority="high">
           </picture>
           <figcaption class="sr-only">Daniel Ishimwe</figcaption>
+          <div class="hero__panel" aria-hidden="true">
+            <header class="hero__panel-header">
+              <span class="hero__panel-dot"></span>
+              <span class="hero__panel-dot"></span>
+              <span class="hero__panel-dot"></span>
+              <span class="hero__panel-title">design.js</span>
+            </header>
+            <pre class="hero__panel-code"><code><span class="token keyword">const</span> daniel = {
+  role: ["systemEngineer", "designer"],
+  focus: "secure experiences",
+  currentProject: <span class="token string">"experienceOps()"</span>,
+  principles: [
+    "accessibility-first",
+    "measure twice ship once",
+    "design systems at scale"
+  ]
+};
+
+<span class="token function">launch</span>(daniel);</code></pre>
+          </div>
         </figure>
       </div>
     </section>
@@ -222,6 +248,109 @@
             <h3>Technical Enablement</h3>
             <p>Partnering with stakeholders to translate technical requirements into clear roadmaps and actionable plans.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="craft" class="section" aria-labelledby="craft-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="craft-title">Crafted like code, shaped like design</h2>
+          <p class="section-lead">A dual perspective that prototypes with pixels and ships production-ready systems.</p>
+        </div>
+        <div class="craft-grid">
+          <article class="craft-card">
+            <header class="craft-card__header">
+              <span class="craft-card__badge">01</span>
+              <h3>Engineering Playbook</h3>
+            </header>
+            <p>From architecture diagrams to CI/CD pipelines, every deliverable is versioned, testable, and monitored.</p>
+            <ul class="code-list" role="list">
+              <li><span class="code-list__key">pattern</span>: <span class="code-list__value">event-driven + API-first</span></li>
+              <li><span class="code-list__key">tooling</span>: <span class="code-list__value">TypeScript, Spring, Terraform</span></li>
+              <li><span class="code-list__key">quality</span>: <span class="code-list__value">tests, observability, playbooks</span></li>
+            </ul>
+          </article>
+          <article class="craft-card">
+            <header class="craft-card__header">
+              <span class="craft-card__badge">02</span>
+              <h3>Design Systems</h3>
+            </header>
+            <p>Interfaces align with brand foundations, motion standards, and WCAG guidelines while staying flexible for iteration.</p>
+            <ul class="code-list" role="list">
+              <li><span class="code-list__key">palette</span>: <span class="code-list__value">contrast-driven, accessible</span></li>
+              <li><span class="code-list__key">process</span>: <span class="code-list__value">wireframe → prototype → validate</span></li>
+              <li><span class="code-list__key">handoff</span>: <span class="code-list__value">Figma specs + coded components</span></li>
+            </ul>
+          </article>
+          <article class="craft-card">
+            <header class="craft-card__header">
+              <span class="craft-card__badge">03</span>
+              <h3>Experience Ops</h3>
+            </header>
+            <p>Blending product discovery with delivery rituals so teams move faster without trading away reliability or delight.</p>
+            <ul class="code-list" role="list">
+              <li><span class="code-list__key">cadence</span>: <span class="code-list__value">weekly design reviews</span></li>
+              <li><span class="code-list__key">metrics</span>: <span class="code-list__value">Core Web Vitals + NPS</span></li>
+              <li><span class="code-list__key">collab</span>: <span class="code-list__value">PM, design, SRE loop</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="toolkit" class="section section--alt" aria-labelledby="toolkit-title">
+      <div class="container toolkit-grid">
+        <div class="code-window" role="figure" aria-labelledby="toolkit-title" aria-describedby="toolkit-code">
+          <header class="code-window__header">
+            <span class="code-window__dot"></span>
+            <span class="code-window__dot"></span>
+            <span class="code-window__dot"></span>
+            <span class="code-window__title">stack.config.ts</span>
+          </header>
+          <pre id="toolkit-code" class="code-window__body"><code><span class="token keyword">export</span> <span class="token keyword">const</span> stack = {
+  product: {
+    language: ["<span class="token string">TypeScript</span>", "<span class="token string">Java</span>"],
+    framework: ["<span class="token string">Next.js</span>", "<span class="token string">Spring Boot</span>"],
+    hosting: "<span class="token string">cloud-native</span>"
+  },
+  design: {
+    system: "<span class="token string">Figma + coded components</span>",
+    compliance: ["<span class="token string">WCAG 2.1 AA</span>", "<span class="token string">design tokens</span>"]
+  },
+  ops: {
+    automation: ["<span class="token string">Terraform</span>", "<span class="token string">Ansible</span>"],
+    monitoring: "<span class="token string">Grafana Observability</span>"
+  }
+};</code></pre>
+        </div>
+        <div class="styleboard" aria-label="Design system snapshot">
+          <h3>Design system snapshot</h3>
+          <p class="styleboard__intro">A holistic toolkit that balances code quality with expressive interfaces.</p>
+          <div class="styleboard__swatches" role="list">
+            <div class="styleboard__swatch styleboard__swatch--primary" role="listitem">
+              <span class="styleboard__swatch-label">Primary</span>
+              <code>#4F46E5</code>
+            </div>
+            <div class="styleboard__swatch styleboard__swatch--accent" role="listitem">
+              <span class="styleboard__swatch-label">Accent</span>
+              <code>#0EA5E9</code>
+            </div>
+            <div class="styleboard__swatch styleboard__swatch--surface" role="listitem">
+              <span class="styleboard__swatch-label">Surface</span>
+              <code>#FFFFFF</code>
+            </div>
+          </div>
+          <div class="styleboard__type">
+            <p class="styleboard__type-label">Typography</p>
+            <p class="styleboard__type-heading">Aa Inter / Poppins</p>
+            <p class="styleboard__type-body">Functional, approachable, and tuned for readability across complex layouts.</p>
+          </div>
+          <ul class="styleboard__bullets" role="list">
+            <li>Component libraries delivered with Storybook docs</li>
+            <li>Design reviews powered by accessibility scorecards</li>
+            <li>Source-controlled design tokens synced with CI</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -416,11 +545,12 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#craft">Craft</a></li>
+          <li><a href="#toolkit">Toolkit</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <a class="back-to-top" href="#top">Back to top</a>
     </div>
   </footer>
 
