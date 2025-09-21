@@ -171,6 +171,7 @@ ul {
   top: 0;
   z-index: 100;
   height: var(--header-height);
+
   backdrop-filter: blur(16px);
   background: rgba(248, 250, 252, 0.85);
   border-bottom: 1px solid transparent;
