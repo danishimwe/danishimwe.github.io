@@ -8,6 +8,7 @@
   var themeToggle = document.getElementById('theme-toggle');
   var prefersDark = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
   var storedPreference = null;
+  var sections = Array.prototype.slice.call(document.querySelectorAll('main section[id]'));
 
   function getStoredTheme() {
     if (storedPreference !== null) return storedPreference;
@@ -79,6 +80,7 @@
     } else {
       header.classList.remove('is-scrolled');
     }
+    updateActiveSection();
   }
 
   function activateNavLink(id) {
@@ -94,22 +96,23 @@
   }
 
   function setupScrollSpy() {
-    if (!('IntersectionObserver' in window)) return;
-    var sections = Array.prototype.slice.call(document.querySelectorAll('main section[id]'));
+    updateActiveSection();
+  }
+
+  function updateActiveSection() {
     if (!sections.length) return;
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          activateNavLink(entry.target.id);
-        }
-      });
-    }, {
-      rootMargin: '-50% 0px -35% 0px',
-      threshold: 0.2
-    });
-    sections.forEach(function (section) {
-      observer.observe(section);
-    });
+    var headerOffset = header ? header.offsetHeight : 0;
+    var scrollPosition = window.scrollY + headerOffset + 120;
+    var currentId = sections[0].id;
+
+    for (var i = 0; i < sections.length; i++) {
+      var section = sections[i];
+      if (section.offsetTop <= scrollPosition) {
+        currentId = section.id;
+      }
+    }
+
+    activateNavLink(currentId);
   }
 
   initTheme();
@@ -145,6 +148,7 @@
   }
 
   window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', updateActiveSection);
 
   var yearEl = document.getElementById('current-year');
   if (yearEl) {
