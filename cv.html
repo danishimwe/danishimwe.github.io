@@ -3,15 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daniel Ishimwe — Curriculum Vitae</title>
-  <meta name="description" content="Download and view the curriculum vitae of Daniel Ishimwe, System Engineer and Cybersecurity enthusiast.">
-  <meta name="robots" content="noindex,follow">
+  <title>Daniel Ishimwe — System Engineer & Software Developer</title>
+  <meta name="description" content="System Engineer, Software Developer, and Cybersecurity enthusiast delivering secure, performant digital experiences.">
+  <meta name="author" content="Daniel Ishimwe">
+  <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#0f172a">
+  <link rel="canonical" href="https://danishimwe.github.io/">
 
-  <link rel="icon" href="images/favicon.png" type="image/png">
+  <meta property="og:title" content="Daniel Ishimwe — System Engineer & Software Developer">
+  <meta property="og:description" content="Secure, scalable, and user-friendly systems for teams that care about impact.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://danishimwe.github.io/">
+  <meta property="og:image" content="images/logo.png">
+  <meta property="og:site_name" content="Daniel Ishimwe Portfolio">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Daniel Ishimwe — System Engineer & Software Developer">
+  <meta name="twitter:description" content="System Engineer, Software Developer, and Cybersecurity enthusiast delivering secure, performant digital experiences.">
+  <meta name="twitter:image" content="images/logo.png">
+
+  <link rel="icon" href="images/logo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="images/logo.png" as="image">
   <link rel="stylesheet" href="css/site.css">
 
   <script>
@@ -28,56 +43,81 @@
       document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
     })();
   </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Daniel Ishimwe",
+      "jobTitle": "System Engineer",
+      "url": "https://danishimwe.github.io/",
+      "image": "https://danishimwe.github.io/images/about-1.jpg",
+      "sameAs": [
+        "https://linkedin.com/in/daniel-ishimwe-k",
+        "https://github.com/danishimwe",
+        "https://orcid.org/0009-0009-4257-2078"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Brussels",
+        "addressCountry": "Belgium"
+      },
+      "knowsAbout": [
+        "System engineering",
+        "Software development",
+        "Cybersecurity",
+        "Infrastructure automation"
+      ]
+    }
+  </script>
 </head>
 <body>
-  <a class="skip-nav" href="#main-content">Skip to main content</a>
-
-  <header class="site-header" id="top" data-nav>
-    <div class="container header-inner">
-      <a class="brand" href="index.html#home" aria-label="Back to home">
-        <span class="brand-mark" aria-hidden="true">DI</span>
-        <span class="brand-text">Daniel Ishimwe</span>
-      </a>
-      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
-        <span class="sr-only">Toggle navigation</span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="index.html#home" class="nav-link" data-nav-link>Home</a></li>
-          <li><a href="index.html#about" class="nav-link" data-nav-link>About</a></li>
-          <li><a href="index.html#services" class="nav-link" data-nav-link>Services</a></li>
-          <li><a href="index.html#craft" class="nav-link" data-nav-link>Craft</a></li>
-          <li><a href="index.html#toolkit" class="nav-link" data-nav-link>Toolkit</a></li>
-          <li><a href="index.html#skills" class="nav-link" data-nav-link>Skills</a></li>
-          <li><a href="index.html#experience" class="nav-link" data-nav-link>Experience</a></li>
-          <li><a href="index.html#projects" class="nav-link" data-nav-link>Projects</a></li>
-          <li><a href="index.html#contact" class="nav-link" data-nav-link>Contact</a></li>
-          <li>
-            <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false" title="Switch to dark mode">
-              <span class="sr-only">Toggle dark mode</span>
-              <svg class="icon icon-moon" viewBox="0 0 24 24" role="presentation" aria-hidden="true">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <svg class="icon icon-sun" viewBox="0 0 24 24" role="presentation" aria-hidden="true">
-                <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                <line x1="12" y1="1.5" x2="12" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="12" y1="19.5" x2="12" y2="22.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="4.22" y1="4.22" x2="6.34" y2="6.34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="17.66" y1="17.66" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="1.5" y1="12" x2="4.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="19.5" y1="12" x2="22.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="4.22" y1="19.78" x2="6.34" y2="17.66" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="17.66" y1="6.34" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header class="site-header" id="top" data-nav>
+  <div class="container header-inner">
+    <a class="brand" href="#home" aria-label="Daniel Ishimwe home">
+      <span class="brand-mark" aria-hidden="true"><img src="images/logo.png" style="max-height: 30px"></span>
+      <span class="brand-text">Daniel Ishimwe.</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="sr-only">Toggle navigation</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link" data-nav-link>Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav-link>About</a></li>
+        <li><a href="#services" class="nav-link" data-nav-link>Services</a></li>
+        <li><a href="#craft" class="nav-link" data-nav-link>Craft</a></li>
+        <li><a href="#toolkit" class="nav-link" data-nav-link>Toolkit</a></li>
+        <li><a href="#skills" class="nav-link" data-nav-link>Skills</a></li>
+        <li><a href="#experience" class="nav-link" data-nav-link>Experience</a></li>
+        <li><a href="#projects" class="nav-link" data-nav-link>Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-nav-link>Contact</a></li>
+        <li>
+          <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false" title="Switch to dark mode">
+            <span class="sr-only">Toggle dark mode</span>
+            <svg class="icon icon-moon" viewBox="0 0 24 24" role="presentation" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <svg class="icon icon-sun" viewBox="0 0 24 24" role="presentation" aria-hidden="true">
+              <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="12" y1="1.5" x2="12" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="12" y1="19.5" x2="12" y2="22.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="4.22" y1="4.22" x2="6.34" y2="6.34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="17.66" y1="17.66" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="1.5" y1="12" x2="4.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="19.5" y1="12" x2="22.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="4.22" y1="19.78" x2="6.34" y2="17.66" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="17.66" y1="6.34" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
   <main id="main-content">
     <section id="resume" class="section" aria-labelledby="resume-title">
