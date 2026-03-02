@@ -65,7 +65,7 @@
 
   <header class="site-header" id="top" data-nav>
     <div class="container header-inner">
-      <a class="brand" href="index.html#home" aria-label="Daniel Ishimwe home">
+      <a class="brand" href="/" data-section="home" aria-label="Daniel Ishimwe home">
         <span class="brand-mark" aria-hidden="true">
           <img src="images/logo.png" alt="">
         </span>
@@ -84,12 +84,12 @@
 
       <nav class="site-nav" id="site-nav" aria-label="Primary">
         <ul class="nav-list">
-          <li><a href="#home" class="nav-link" data-nav-link>Home</a></li>
-          <li><a href="#profile" class="nav-link" data-nav-link>Profile</a></li>
-          <li><a href="#expertise" class="nav-link" data-nav-link>Expertise</a></li>
-          <li><a href="#experience" class="nav-link" data-nav-link>Experience</a></li>
-          <li><a href="#contact" class="nav-link" data-nav-link>Contact</a></li>
-          <li><a href="cv.html" class="nav-link nav-link--cta">Resume</a></li>
+          <li><a href="/" class="nav-link" data-nav-link data-section="home">Home</a></li>
+          <li><a href="/profile" class="nav-link" data-nav-link data-section="profile">Profile</a></li>
+          <li><a href="/expertise" class="nav-link" data-nav-link data-section="expertise">Expertise</a></li>
+          <li><a href="/experience" class="nav-link" data-nav-link data-section="experience">Experience</a></li>
+          <li><a href="/contact" class="nav-link" data-nav-link data-section="contact">Contact</a></li>
+          <li><a href="/cv.html" class="nav-link nav-link--cta" data-nav-link data-section="resume">Resume</a></li>
           <li>
             <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false" title="Switch to dark mode">
               <span class="sr-only">Toggle theme</span>
@@ -123,7 +123,7 @@
 
           <div class="hero-actions">
             <a class="btn btn--primary" href="files/Daniel%20Ishimwe-cv.pdf" download="Resume - Daniel Ishimwe.pdf">Download PDF</a>
-            <a class="btn btn--ghost" href="index.html#experience">Back to experience</a>
+            <a class="btn btn--ghost" href="/experience" data-section="experience">Back to experience</a>
             <a class="btn btn--ghost" href="mailto:daniel.ishimwee@gmail.com">Email Daniel</a>
           </div>
 
@@ -166,10 +166,10 @@
       <p class="footer-copy">&copy; <span id="current-year"></span> Daniel Ishimwe. Resume-aligned website.</p>
       <nav aria-label="Footer">
         <ul class="footer-nav">
-          <li><a href="index.html#home">Home</a></li>
-          <li><a href="index.html#profile">Profile</a></li>
-          <li><a href="index.html#experience">Experience</a></li>
-          <li><a href="#resume">Resume</a></li>
+          <li><a href="/" data-section="home">Home</a></li>
+          <li><a href="/profile" data-section="profile">Profile</a></li>
+          <li><a href="/experience" data-section="experience">Experience</a></li>
+          <li><a href="/cv.html">Resume</a></li>
         </ul>
       </nav>
       <a class="back-to-top" href="#top">Back to top</a>
