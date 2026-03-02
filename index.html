@@ -3,30 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daniel Ishimwe — System Engineer & Software Developer</title>
-  <meta name="description" content="System Engineer, Software Developer, and Cybersecurity enthusiast delivering secure, performant digital experiences.">
+  <title>Daniel Ishimwe | Junior Security Engineer</title>
+  <meta name="description" content="Junior Security Engineer focused on secure infrastructure, systems hardening, database operations, and incident investigation.">
   <meta name="author" content="Daniel Ishimwe">
   <meta name="robots" content="index,follow">
-  <meta name="theme-color" content="#0f172a">
+  <meta name="theme-color" content="#0f7a69">
   <link rel="canonical" href="https://danishimwe.github.io/">
 
-  <meta property="og:title" content="Daniel Ishimwe — System Engineer & Software Developer">
-  <meta property="og:description" content="Secure, scalable, and user-friendly systems for teams that care about impact.">
+  <meta property="og:title" content="Daniel Ishimwe | Junior Security Engineer">
+  <meta property="og:description" content="Security-focused systems and infrastructure work backed by enterprise operations experience and a current Master of Cybersecurity.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://danishimwe.github.io/">
-  <meta property="og:image" content="images/logo.png">
-  <meta property="og:site_name" content="Daniel Ishimwe Portfolio">
+  <meta property="og:image" content="https://danishimwe.github.io/images/bg_1.png">
+  <meta property="og:site_name" content="Daniel Ishimwe">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Daniel Ishimwe — System Engineer & Software Developer">
-  <meta name="twitter:description" content="System Engineer, Software Developer, and Cybersecurity enthusiast delivering secure, performant digital experiences.">
-  <meta name="twitter:image" content="images/logo.png">
+  <meta name="twitter:title" content="Daniel Ishimwe | Junior Security Engineer">
+  <meta name="twitter:description" content="Secure systems, infrastructure operations, database reliability, and hands-on security practice.">
+  <meta name="twitter:image" content="https://danishimwe.github.io/images/bg_1.png">
 
-  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="icon" href="images/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="preload" href="images/logo.png" as="image">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <link rel="preload" href="images/bg_1.png" as="image">
   <link rel="stylesheet" href="css/site.css">
 
   <script>
@@ -38,7 +38,7 @@
           document.documentElement.setAttribute('data-theme', stored);
           return;
         }
-      } catch (e) {}
+      } catch (err) {}
       var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
       document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
     })();
@@ -49,68 +49,83 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Daniel Ishimwe",
-      "jobTitle": "System Engineer",
+      "jobTitle": "Junior Security Engineer",
       "url": "https://danishimwe.github.io/",
-      "image": "https://danishimwe.github.io/images/about-1.jpg",
+      "image": "https://danishimwe.github.io/images/bg_1.png",
+      "email": "mailto:daniel.ishimwee@gmail.com",
+      "telephone": "+32492399868",
       "sameAs": [
         "https://linkedin.com/in/daniel-ishimwe-k",
-        "https://github.com/danishimwe",
-        "https://orcid.org/0009-0009-4257-2078"
+        "https://github.com/danishimwe"
       ],
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Brussels",
         "addressCountry": "Belgium"
       },
+      "alumniOf": [
+        "Universite Libre de Bruxelles",
+        "Parul University",
+        "Groupe Scolaire de La Salle"
+      ],
       "knowsAbout": [
-        "System engineering",
-        "Software development",
-        "Cybersecurity",
-        "Infrastructure automation"
+        "System hardening",
+        "Secure configuration",
+        "Infrastructure operations",
+        "Database administration",
+        "Incident investigation",
+        "Linux",
+        "Windows"
       ]
     }
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
   <header class="site-header" id="top" data-nav>
     <div class="container header-inner">
       <a class="brand" href="#home" aria-label="Daniel Ishimwe home">
-        <span class="brand-mark" aria-hidden="true"><img src="images/logo.png" style="max-height: 30px"></span>
-        <span class="brand-text">Daniel Ishimwe.</span>
+        <span class="brand-mark" aria-hidden="true">
+          <img src="images/logo.png" alt="">
+        </span>
+        <span class="brand-text">
+          <strong>Daniel Ishimwe</strong>
+          <span>Security / Systems / Infrastructure</span>
+        </span>
       </a>
+
       <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar" aria-hidden="true">&#8203;</span>
+        <span class="nav-toggle__bar" aria-hidden="true">&#8203;</span>
+        <span class="nav-toggle__bar" aria-hidden="true">&#8203;</span>
         <span class="sr-only">Toggle navigation</span>
       </button>
+
       <nav class="site-nav" id="site-nav" aria-label="Primary">
         <ul class="nav-list">
           <li><a href="#home" class="nav-link" data-nav-link>Home</a></li>
-          <li><a href="#about" class="nav-link" data-nav-link>About</a></li>
-          <li><a href="#services" class="nav-link" data-nav-link>Services</a></li>
-          <li><a href="#craft" class="nav-link" data-nav-link>Craft</a></li>
-          <li><a href="#toolkit" class="nav-link" data-nav-link>Toolkit</a></li>
-          <li><a href="#skills" class="nav-link" data-nav-link>Skills</a></li>
+          <li><a href="#profile" class="nav-link" data-nav-link>Profile</a></li>
+          <li><a href="#expertise" class="nav-link" data-nav-link>Expertise</a></li>
           <li><a href="#experience" class="nav-link" data-nav-link>Experience</a></li>
-          <li><a href="#projects" class="nav-link" data-nav-link>Projects</a></li>
+          <li><a href="#credentials" class="nav-link" data-nav-link>Credentials</a></li>
           <li><a href="#contact" class="nav-link" data-nav-link>Contact</a></li>
+          <li><a href="cv.html" class="nav-link nav-link--cta">Resume</a></li>
           <li>
             <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false" title="Switch to dark mode">
-              <span class="sr-only">Toggle dark mode</span>
+              <span class="sr-only">Toggle theme</span>
               <svg class="icon icon-moon" viewBox="0 0 24 24" role="presentation" aria-hidden="true">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
               <svg class="icon icon-sun" viewBox="0 0 24 24" role="presentation" aria-hidden="true">
-                <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                <line x1="12" y1="1.5" x2="12" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="12" y1="19.5" x2="12" y2="22.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="4.22" y1="4.22" x2="6.34" y2="6.34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="17.66" y1="17.66" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="1.5" y1="12" x2="4.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="19.5" y1="12" x2="22.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="4.22" y1="19.78" x2="6.34" y2="17.66" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="17.66" y1="6.34" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+                <line x1="12" y1="1.5" x2="12" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
+                <line x1="12" y1="19.5" x2="12" y2="22.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
+                <line x1="4.22" y1="4.22" x2="6.34" y2="6.34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
+                <line x1="17.66" y1="17.66" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
+                <line x1="1.5" y1="12" x2="4.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
+                <line x1="19.5" y1="12" x2="22.5" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
+                <line x1="4.22" y1="19.78" x2="6.34" y2="17.66" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
+                <line x1="17.66" y1="6.34" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
               </svg>
             </button>
           </li>
@@ -120,448 +135,465 @@
   </header>
 
   <main id="main-content">
-    <section id="home" class="hero section" aria-labelledby="hero-title">
-      <div class="container hero__inner">
-        <div class="hero__content">
-          <div class="hero__badge" role="note">
-            <span class="hero__badge-led" aria-hidden="true"></span>
-            <span class="hero__badge-text">Designing with code since 2016</span>
+    <section id="home" class="section hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Junior Security Engineer</p>
+          <h1 id="hero-title">Systems and infrastructure work shaped by security thinking.</h1>
+          <p class="lead">I work across secure system operations, infrastructure support, database reliability, and defensive security practice. My resume is anchored in enterprise environments, Linux and Windows administration, and a current Master of Cybersecurity at ULB.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="cv.html">View resume</a>
+            <a class="btn btn--ghost" href="#experience">Explore experience</a>
+            <a class="btn btn--ghost" href="files/Daniel%20Ishimwe-cv.pdf" download="Resume - Daniel Ishimwe.pdf">Download PDF</a>
           </div>
-          <p class="eyebrow">System Engineer · Software Developer · Cybersecurity Enthusiast</p>
-          <h1 id="hero-title">Building secure, scalable, and user-friendly systems that people trust.</h1>
-          <p class="hero__lead">I bridge infrastructure, software development, and cybersecurity to help organizations deliver resilient products faster. From automating platform operations to optimising application experiences, I focus on creating measurable impact for engineering teams and their users.</p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="cv.html">Download CV</a>
-            <a class="btn btn--ghost" href="#contact">Work with me</a>
-          </div>
-          <ul class="hero__highlights" role="list">
-            <li>Infrastructure automation & cloud-native delivery</li>
-            <li>Full-stack application design & integration</li>
-            <li>Security-first approach grounded in academic research</li>
+
+          <ul class="hero-points" role="list">
+            <li>System hardening, secure configuration, and incident-oriented operations</li>
+            <li>Infrastructure delivery across IBM Power, storage, monitoring, and high-availability environments</li>
+            <li>Database access control, integrity validation, and operational reliability</li>
+            <li>Security practice through labs, CTFs, Cybersecurity Challenge Belgium, and SANS NetWars</li>
           </ul>
-        </div>
-        <figure class="hero__media">
-          <picture>
-            <source srcset="images/bg_1.png" type="image/png">
-            <img src="images/bg_1.png" alt="Portrait of Daniel Ishimwe" width="560" height="640" loading="eager" fetchpriority="high">
-          </picture>
-          <figcaption class="sr-only">Daniel Ishimwe</figcaption>
-          <div class="hero__panel" aria-hidden="true">
-            <header class="hero__panel-header">
-              <span class="hero__panel-dot"></span>
-              <span class="hero__panel-dot"></span>
-              <span class="hero__panel-dot"></span>
-              <span class="hero__panel-title">design.js</span>
-            </header>
-            <pre class="hero__panel-code"><code><span class="token keyword">const</span> daniel = {
-  role: ["systemEngineer", "designer"],
-  focus: "secure experiences",
-  currentProject: <span class="token string">"experienceOps()"</span>,
-  principles: [
-    "accessibility-first",
-    "measure twice ship once",
-    "design systems at scale"
-  ]
-};
-<span class="token function">launch</span>(daniel);</code>
-            </pre>
+
+          <div class="hero-contact" aria-label="Direct contact">
+            <a href="mailto:daniel.ishimwee@gmail.com">daniel.ishimwee@gmail.com</a>
+            <a href="tel:+32492399868">+32 492 39 98 68</a>
+            <a href="https://github.com/danishimwe" target="_blank" rel="noopener">github.com/danishimwe</a>
+            <a href="https://linkedin.com/in/daniel-ishimwe-k" target="_blank" rel="noopener">linkedin.com/in/daniel-ishimwe-k</a>
           </div>
-        </figure>
+        </div>
+
+        <div class="hero-aside">
+          <figure class="portrait-card">
+            <div class="portrait-shell">
+              <img src="images/bg_1.png" alt="Portrait of Daniel Ishimwe" width="957" height="1288" loading="eager">
+            </div>
+            <figcaption class="portrait-caption">
+              <span>Current direction</span>
+              <strong>Cybersecurity, infrastructure operations, and secure platform support</strong>
+            </figcaption>
+          </figure>
+
+          <aside class="signal-card" aria-label="Operational snapshot">
+            <p class="signal-card__eyebrow">Operational snapshot</p>
+            <div class="signal-grid">
+              <div class="signal-row">
+                <span class="signal-row__label">Study</span>
+                <span class="signal-row__value">Master of Cybersecurity, Universite Libre de Bruxelles</span>
+              </div>
+              <div class="signal-row">
+                <span class="signal-row__label">Systems</span>
+                <span class="signal-row__value">Linux, Windows, IBM Power Systems, FlashSystem, Storwize</span>
+              </div>
+              <div class="signal-row">
+                <span class="signal-row__label">Security</span>
+                <span class="signal-row__value">Hardening, log analysis, vulnerability assessment, incident investigation</span>
+              </div>
+              <div class="signal-row">
+                <span class="signal-row__label">Practice</span>
+                <span class="signal-row__value">Home lab, web exploitation, cryptography, network analysis</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="container metric-grid" aria-label="Resume highlights">
+        <article class="metric-card">
+          <p class="metric-card__value">4</p>
+          <p class="metric-card__label">Professional roles</p>
+        </article>
+        <article class="metric-card">
+          <p class="metric-card__value">6</p>
+          <p class="metric-card__label">Technical domains</p>
+        </article>
+        <article class="metric-card">
+          <p class="metric-card__value">5</p>
+          <p class="metric-card__label">Certification tracks</p>
+        </article>
+        <article class="metric-card">
+          <p class="metric-card__value">2</p>
+          <p class="metric-card__label">Security competitions</p>
+        </article>
       </div>
     </section>
 
-    <section id="highlights" class="section section--alt" aria-label="Key highlights">
-      <div class="container">
-        <div class="section-header">
-          <h2>At a glance</h2>
-          <p class="section-lead">A proven track record combining academic research, industry experience, and hands-on delivery.</p>
+    <section id="profile" class="section section--panel" aria-labelledby="profile-title">
+      <div class="container profile-grid">
+        <div class="surface-card profile-card">
+          <p class="eyebrow">Profile</p>
+          <h2 id="profile-title">A systems background with a clear security trajectory.</h2>
+          <p>My experience spans research infrastructure, tax systems, enterprise storage platforms, and software development. Across those settings, the common thread has been dependable operations: securing environments, validating system integrity, improving access control, and resolving incidents under pressure.</p>
+          <p>The current emphasis is defensive security. That includes secure configuration, log analysis, vulnerability assessment, network security fundamentals, and hands-on practice through labs and competitions.</p>
         </div>
-        <div class="metric-grid">
-          <article class="metric-card">
-            <p class="metric-card__value">7<span aria-hidden="true">+</span></p>
-            <p class="metric-card__label">Years delivering secure infrastructure and software solutions</p>
-          </article>
-          <article class="metric-card">
-            <p class="metric-card__value">3</p>
-            <p class="metric-card__label">Major platforms launched across public and private sectors</p>
-          </article>
-          <article class="metric-card">
-            <p class="metric-card__value">2</p>
-            <p class="metric-card__label">Degrees in Computer Applications and Cybersecurity</p>
-          </article>
-        </div>
-      </div>
-    </section>
 
-    <section id="about" class="section" aria-labelledby="about-title">
-      <div class="container two-column">
-        <div>
-          <h2 id="about-title" class="section-title">About</h2>
-          <p>I am an IT professional based in Brussels with a background that connects IT management, system engineering, and full-stack development. Currently pursuing a Master&rsquo;s in Cybersecurity, I help teams implement secure systems while keeping user experience front and center.</p>
-          <p>My career spans public agencies, research institutions, and startups. Whether modernising infrastructure or building new digital products, I combine strategic thinking with hands-on engineering to keep projects moving smoothly.</p>
-          <ul class="checklist" role="list">
-            <li>Security-aware architecture and implementation</li>
-            <li>Automation that accelerates delivery without sacrificing reliability</li>
-            <li>Collaborative leadership across cross-functional teams</li>
-          </ul>
-          <div class="about-callout">
+        <aside class="surface-card scan-card" aria-labelledby="scan-title">
+          <p class="eyebrow">Current focus</p>
+          <h2 id="scan-title">Where the resume points next</h2>
+          <div class="key-value">
             <div>
-              <p class="about-callout__title">Where I work</p>
-              <p class="about-callout__body">Brussels, Belgium &middot; Available for on-site and remote engagements across Europe.</p>
+              <p class="key-value__label">Primary direction</p>
+              <p class="key-value__body">Junior security engineering and secure systems operations</p>
             </div>
-            <a class="btn btn--ghost" href="https://linkedin.com/in/daniel-ishimwe-k" target="_blank" rel="noopener">Connect on LinkedIn</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="section section--alt" aria-labelledby="services-title">
-      <div class="container">
-        <div class="section-header">
-          <h2 id="services-title">How I can help</h2>
-          <p class="section-lead">Delivering end-to-end value from architecture through operations with measurable business outcomes.</p>
-        </div>
-        <div class="card-grid">
-          <article class="service-card">
-            <h3>Systems Engineering</h3>
-            <p>Designing resilient infrastructure that scales with demand, backed by strong observability and governance.</p>
-          </article>
-          <article class="service-card">
-            <h3>Full-Stack Development</h3>
-            <p>Building accessible, performant applications using modern frameworks and rigorous testing practices.</p>
-          </article>
-          <article class="service-card">
-            <h3>Cybersecurity Readiness</h3>
-            <p>Embedding security principles into every project stage, from threat modelling to secure deployment pipelines.</p>
-          </article>
-          <article class="service-card">
-            <h3>Database Architecture</h3>
-            <p>Designing and maintaining data platforms that keep information reliable, accessible, and protected.</p>
-          </article>
-          <article class="service-card">
-            <h3>Automation &amp; Tooling</h3>
-            <p>Introducing CI/CD, configuration management, and infrastructure-as-code workflows that boost team velocity.</p>
-          </article>
-          <article class="service-card">
-            <h3>Technical Enablement</h3>
-            <p>Partnering with stakeholders to translate technical requirements into clear roadmaps and actionable plans.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="craft" class="section" aria-labelledby="craft-title">
-      <div class="container">
-        <div class="section-header">
-          <h2 id="craft-title">Crafted like code, shaped like design</h2>
-          <p class="section-lead">A dual perspective that prototypes with pixels and ships production-ready systems.</p>
-        </div>
-        <div class="craft-grid">
-          <article class="craft-card">
-            <header class="craft-card__header">
-              <span class="craft-card__badge">01</span>
-              <h3>Engineering Playbook</h3>
-            </header>
-            <p>From architecture diagrams to CI/CD pipelines, every deliverable is versioned, testable, and monitored.</p>
-            <ul class="code-list" role="list">
-              <li><span class="code-list__key">pattern</span>: <span class="code-list__value">event-driven + API-first</span></li>
-              <li><span class="code-list__key">tooling</span>: <span class="code-list__value">TypeScript, Spring, Terraform</span></li>
-              <li><span class="code-list__key">quality</span>: <span class="code-list__value">tests, observability, playbooks</span></li>
-            </ul>
-          </article>
-          <article class="craft-card">
-            <header class="craft-card__header">
-              <span class="craft-card__badge">02</span>
-              <h3>Design Systems</h3>
-            </header>
-            <p>Interfaces align with brand foundations, motion standards, and WCAG guidelines while staying flexible for iteration.</p>
-            <ul class="code-list" role="list">
-              <li><span class="code-list__key">palette</span>: <span class="code-list__value">contrast-driven, accessible</span></li>
-              <li><span class="code-list__key">process</span>: <span class="code-list__value">wireframe → prototype → validate</span></li>
-              <li><span class="code-list__key">handoff</span>: <span class="code-list__value">Figma specs + coded components</span></li>
-            </ul>
-          </article>
-          <article class="craft-card">
-            <header class="craft-card__header">
-              <span class="craft-card__badge">03</span>
-              <h3>Experience Ops</h3>
-            </header>
-            <p>Blending product discovery with delivery rituals so teams move faster without trading away reliability or delight.</p>
-            <ul class="code-list" role="list">
-              <li><span class="code-list__key">cadence</span>: <span class="code-list__value">weekly design reviews</span></li>
-              <li><span class="code-list__key">metrics</span>: <span class="code-list__value">Core Web Vitals + NPS</span></li>
-              <li><span class="code-list__key">collab</span>: <span class="code-list__value">PM, design, SRE loop</span></li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="toolkit" class="section section--alt" aria-labelledby="toolkit-title">
-      <div class="container toolkit-grid">
-        <div class="code-window" role="figure" aria-labelledby="toolkit-title" aria-describedby="toolkit-code">
-          <header class="code-window__header">
-            <span class="code-window__dot"></span>
-            <span class="code-window__dot"></span>
-            <span class="code-window__dot"></span>
-            <span class="code-window__title">stack.config.ts</span>
-          </header>
-          <pre id="toolkit-code" class="code-window__body"><code><span class="token keyword">export</span> <span class="token keyword">const</span> stack = {
-  product: {
-    language: ["<span class="token string">TypeScript</span>", "<span class="token string">Java</span>"],
-    framework: ["<span class="token string">Next.js</span>", "<span class="token string">Spring Boot</span>"],
-    hosting: "<span class="token string">cloud-native</span>"
-  },
-  design: {
-    system: "<span class="token string">Figma + coded components</span>",
-    compliance: ["<span class="token string">WCAG 2.1 AA</span>", "<span class="token string">design tokens</span>"]
-  },
-  ops: {
-    automation: ["<span class="token string">Terraform</span>", "<span class="token string">Ansible</span>"],
-    monitoring: "<span class="token string">Grafana Observability</span>"
-  }
-};</code></pre>
-        </div>
-        <div class="styleboard" aria-label="Design system snapshot">
-          <h3>Design system snapshot</h3>
-          <p class="styleboard__intro">A holistic toolkit that balances code quality with expressive interfaces.</p>
-          <div class="styleboard__swatches" role="list">
-            <div class="styleboard__swatch styleboard__swatch--primary" role="listitem">
-              <span class="styleboard__swatch-label">Primary</span>
-              <code>#4F46E5</code>
+            <div>
+              <p class="key-value__label">Enterprise strengths</p>
+              <p class="key-value__body">Infrastructure monitoring, high availability, secure platform support</p>
             </div>
-            <div class="styleboard__swatch styleboard__swatch--accent" role="listitem">
-              <span class="styleboard__swatch-label">Accent</span>
-              <code>#0EA5E9</code>
+            <div>
+              <p class="key-value__label">Database work</p>
+              <p class="key-value__body">MySQL, MariaDB, PostgreSQL, MongoDB, tuning, and data integrity validation</p>
             </div>
-            <div class="styleboard__swatch styleboard__swatch--surface" role="listitem">
-              <span class="styleboard__swatch-label">Surface</span>
-              <code>#FFFFFF</code>
+            <div>
+              <p class="key-value__label">Delivery style</p>
+              <p class="key-value__body">Hands-on, analytical, and oriented toward reliability over noise</p>
             </div>
           </div>
-          <div class="styleboard__type">
-            <p class="styleboard__type-label">Typography</p>
-            <p class="styleboard__type-heading">Aa Inter / Poppins</p>
-            <p class="styleboard__type-body">Functional, approachable, and tuned for readability across complex layouts.</p>
-          </div>
-          <ul class="styleboard__bullets" role="list">
-            <li>Component libraries delivered with Storybook docs</li>
-            <li>Design reviews powered by accessibility scorecards</li>
-            <li>Source-controlled design tokens synced with CI</li>
-          </ul>
+        </aside>
+      </div>
+
+      <div class="container org-strip">
+        <div class="section-heading section-heading--compact">
+          <p class="eyebrow">Recent environments</p>
+          <h2>Experience across research, public-sector operations, and enterprise systems.</h2>
+        </div>
+        <div class="org-strip__items" role="list">
+          <article class="org-chip" role="listitem">
+            <img src="images/ku_leuven.png" alt="KU Leuven logo" width="480" height="427" loading="lazy">
+            <strong>KU Leuven - COSIC</strong>
+            <span>Secure research infrastructure and online voting systems</span>
+          </article>
+          <article class="org-chip" role="listitem">
+            <img src="images/rra.png" alt="Rwanda Revenue Authority logo" width="225" height="225" loading="lazy">
+            <strong>Rwanda Revenue Authority</strong>
+            <span>Database operations, system support, and tax platform data integrity</span>
+          </article>
+          <article class="org-chip" role="listitem">
+            <img src="images/mitra_systems.jpeg" alt="Mitra Systems logo" width="796" height="314" loading="lazy">
+            <strong>Mitra Systems</strong>
+            <span>IBM Power Systems, storage, health checks, and high availability</span>
+          </article>
+          <article class="org-chip org-chip--text" role="listitem">
+            <strong>A to Z Technology Systems</strong>
+            <span>Software development and workflow automation</span>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section" aria-labelledby="skills-title">
+    <section id="expertise" class="section" aria-labelledby="expertise-title">
       <div class="container">
-        <div class="section-header">
-          <h2 id="skills-title">Core expertise</h2>
-          <p class="section-lead">A balanced toolkit spanning software engineering, automation, and data management.</p>
+        <div class="section-heading">
+          <p class="eyebrow">Core expertise</p>
+          <h2 id="expertise-title">The website now mirrors the resume categories directly.</h2>
+          <p>Instead of a generic services portfolio, this section is structured around the exact technical lanes named in the CV.</p>
         </div>
-        <div class="skills-grid">
-          <article class="skills-card">
-            <h3>Software Engineering</h3>
-            <p>Programming languages and practices for building maintainable products.</p>
+
+        <div class="capability-grid">
+          <article class="capability-card">
+            <p class="card-kicker">Cybersecurity</p>
+            <h3>Hardening, analysis, and investigation</h3>
+            <p>Secure configuration, vulnerability assessment, log review, access control management, cryptography fundamentals, and incident investigation.</p>
             <ul class="tag-list" role="list">
-              <li>Java</li>
-              <li>JavaScript</li>
-              <li>Python</li>
-              <li>PHP</li>
-              <li>C / C++</li>
-              <li>HTML &amp; CSS</li>
+              <li>System hardening</li>
+              <li>Secure configuration</li>
+              <li>Log analysis</li>
+              <li>Risk assessment</li>
             </ul>
           </article>
-          <article class="skills-card">
-            <h3>Data Platforms</h3>
-            <p>Structured and unstructured data solutions that keep insights flowing.</p>
+
+          <article class="capability-card">
+            <p class="card-kicker">Systems</p>
+            <h3>Enterprise infrastructure operations</h3>
+            <p>IBM Power Systems, FlashSystem, Storwize, system upgrades, monitoring, health checks, and secure infrastructure support for critical services.</p>
+            <ul class="tag-list" role="list">
+              <li>IBM Power</li>
+              <li>Storwize</li>
+              <li>FlashSystem</li>
+              <li>High availability</li>
+            </ul>
+          </article>
+
+          <article class="capability-card">
+            <p class="card-kicker">Cloud and virtualization</p>
+            <h3>Platform exposure with lab-driven practice</h3>
+            <p>IBM Hybrid Multicloud, VMware, VirtualBox, Firebase ecosystem work, and virtualized environments used for attack simulation and defensive analysis.</p>
+            <ul class="tag-list" role="list">
+              <li>VMware</li>
+              <li>VirtualBox</li>
+              <li>Firebase</li>
+              <li>Hybrid cloud</li>
+            </ul>
+          </article>
+
+          <article class="capability-card">
+            <p class="card-kicker">DevOps and tooling</p>
+            <h3>Operational tooling that supports reliability</h3>
+            <p>Git, Docker, Vagrant, Ansible, Linux server management, deployment workflows, DNS configuration, and domain hosting.</p>
+            <ul class="tag-list" role="list">
+              <li>Git</li>
+              <li>Docker</li>
+              <li>Ansible</li>
+              <li>DNS</li>
+            </ul>
+          </article>
+
+          <article class="capability-card">
+            <p class="card-kicker">Development</p>
+            <h3>Programming across systems and web delivery</h3>
+            <p>C, C++, Python, Java, JavaScript, PHP, HTML, CSS, Flask, React, Next.js, backend API development, and automation scripting.</p>
+            <ul class="tag-list" role="list">
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+            </ul>
+          </article>
+
+          <article class="capability-card">
+            <p class="card-kicker">Databases</p>
+            <h3>Integrity, performance, and access control</h3>
+            <p>MySQL, MariaDB, PostgreSQL, MongoDB, database design, performance tuning, and validation work that keeps operational data dependable.</p>
             <ul class="tag-list" role="list">
               <li>MySQL</li>
+              <li>MariaDB</li>
+              <li>PostgreSQL</li>
               <li>MongoDB</li>
-              <li>Data modelling</li>
-              <li>Performance tuning</li>
-            </ul>
-          </article>
-          <article class="skills-card">
-            <h3>Infrastructure &amp; Automation</h3>
-            <p>Tooling that powers reliable delivery across environments.</p>
-            <ul class="tag-list" role="list">
-              <li>Docker</li>
-              <li>Vagrant</li>
-              <li>Ansible</li>
-              <li>Git</li>
-              <li>Secure remote access (PuTTY / SSH)</li>
-            </ul>
-          </article>
-          <article class="skills-card">
-            <h3>Collaboration &amp; Delivery</h3>
-            <p>Working across disciplines to drive clarity and momentum.</p>
-            <ul class="tag-list" role="list">
-              <li>Technical leadership</li>
-              <li>Stakeholder alignment</li>
-              <li>Lean delivery practices</li>
-              <li>Continuous improvement</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="section section--alt" aria-labelledby="experience-title">
+    <section id="experience" class="section section--panel" aria-labelledby="experience-title">
       <div class="container">
-        <div class="section-header">
-          <h2 id="experience-title">Experience &amp; education</h2>
-          <p class="section-lead">Blending academic research with hands-on delivery across Europe and Africa.</p>
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">Career history rewritten around what the resume actually emphasizes.</h2>
+          <p>The earlier site mixed roles and narratives that did not line up cleanly with the CV. These entries now follow the resume dates, titles, and responsibilities.</p>
         </div>
+
         <div class="timeline" role="list">
-          <article class="timeline-item" role="listitem">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="timeline-body">
-              <h3>IT Specialist &mdash; KU Leuven (COSIC)</h3>
-              <p class="timeline-meta">Heverlee, Leuven &middot; Enabling cryptography research teams with secure infrastructure and responsive support.</p>
+          <article class="timeline-card" role="listitem">
+            <div class="timeline-card__header">
+              <div class="timeline-card__company">
+                <img class="company-logo" src="images/ku_leuven.png" alt="KU Leuven logo" width="480" height="427" loading="lazy">
+                <div>
+                  <p class="card-kicker">KU Leuven - COSIC</p>
+                  <h3>IT Specialist</h3>
+                  <p class="timeline-subtitle">Leuven, Belgium</p>
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="pill">Nov 2023 - Nov 2025</span>
+                <span>Research infrastructure and secure operations</span>
+              </div>
             </div>
+            <ul class="bullet-list">
+              <li>Implemented system hardening and secure configurations across Linux and Windows environments.</li>
+              <li>Managed secure infrastructure supporting research services and online voting systems.</li>
+              <li>Enforced database access control policies and improved performance reliability.</li>
+              <li>Contributed to operational security validation and system integrity checks.</li>
+              <li>Investigated and resolved infrastructure and security-related incidents under time constraints.</li>
+            </ul>
           </article>
-          <article class="timeline-item" role="listitem">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="timeline-body">
-              <h3>Master of Cybersecurity &mdash; Universit&eacute; Libre de Bruxelles</h3>
-              <p class="timeline-meta">Brussels, Belgium &middot; Advancing expertise in defensive security, privacy, and risk management.</p>
+
+          <article class="timeline-card" role="listitem">
+            <div class="timeline-card__header">
+              <div class="timeline-card__company">
+                <img class="company-logo" src="images/rra.png" alt="Rwanda Revenue Authority logo" width="225" height="225" loading="lazy">
+                <div>
+                  <p class="card-kicker">Rwanda Revenue Authority</p>
+                  <h3>EBM IT Officer</h3>
+                  <p class="timeline-subtitle">Kigali, Rwanda</p>
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="pill">Sept 2020 - Jan 2023</span>
+                <span>Tax systems and data integrity</span>
+              </div>
             </div>
+            <ul class="bullet-list">
+              <li>Installed and configured the Electronic Billing Machine software used for tax collection.</li>
+              <li>Managed and maintained databases, ensuring data accuracy and compliance.</li>
+              <li>Conducted local audits and validated data integrity.</li>
+              <li>Ensured systems reported data seamlessly into centralized databases.</li>
+              <li>Provided customer support and resolved software and system issues.</li>
+            </ul>
           </article>
-          <article class="timeline-item" role="listitem">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="timeline-body">
-              <h3>System Engineer &mdash; Mitra Systems</h3>
-              <p class="timeline-meta">Blantyre, Malawi &middot; Modernised infrastructure and improved service reliability for enterprise clients.</p>
+
+          <article class="timeline-card" role="listitem">
+            <div class="timeline-card__header">
+              <div class="timeline-card__company">
+                <img class="company-logo" src="images/mitra_systems.jpeg" alt="Mitra Systems logo" width="796" height="314" loading="lazy">
+                <div>
+                  <p class="card-kicker">Mitra Systems</p>
+                  <h3>System Engineer</h3>
+                  <p class="timeline-subtitle">Blantyre, Malawi</p>
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="pill">Nov 2019 - June 2020</span>
+                <span>Enterprise systems and storage</span>
+              </div>
             </div>
+            <ul class="bullet-list">
+              <li>Installed, configured, and maintained IBM Power Systems and Storwize or FlashSystem storage solutions.</li>
+              <li>Performed system health checks, monitoring, and reporting.</li>
+              <li>Supported system upgrades and preventive maintenance to ensure high availability.</li>
+              <li>Designed storage and database configurations for scalability and reliability.</li>
+              <li>Collaborated on SAP HANA deployments on IBM POWER platforms.</li>
+            </ul>
           </article>
-          <article class="timeline-item" role="listitem">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="timeline-body">
-              <h3>IT Officer &mdash; Rwanda Revenue Authority</h3>
-              <p class="timeline-meta">Kigali, Rwanda &middot; Supported mission-critical systems and streamlined internal support workflows.</p>
+
+          <article class="timeline-card" role="listitem">
+            <div class="timeline-card__header">
+              <div class="timeline-card__company">
+                <span class="company-logo company-logo--text">A2Z</span>
+                <div>
+                  <p class="card-kicker">A to Z Technology Systems</p>
+                  <h3>Software Developer</h3>
+                  <p class="timeline-subtitle">Kigali, Rwanda</p>
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="pill">Dec 2014 - June 2016</span>
+                <span>Application development and automation</span>
+              </div>
             </div>
-          </article>
-          <article class="timeline-item" role="listitem">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="timeline-body">
-              <h3>Bachelor of Computer Applications &mdash; Parul University</h3>
-              <p class="timeline-meta">Vadodara, India &middot; Graduated with a focus on software engineering and emerging technologies.</p>
-            </div>
-          </article>
-          <article class="timeline-item" role="listitem">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="timeline-body">
-              <h3>Founder &amp; CEO &mdash; Stay Serase</h3>
-              <p class="timeline-meta">Kigali, Rwanda &middot; Led a hospitality startup, overseeing technology, operations, and customer experience.</p>
-            </div>
+            <ul class="bullet-list">
+              <li>Developed and maintained software applications in multiple programming languages.</li>
+              <li>Automated repetitive tasks using scripts to reduce manual workload.</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section" aria-labelledby="projects-title">
+    <section id="practice" class="section" aria-labelledby="practice-title">
       <div class="container">
-        <div class="section-header">
-          <h2 id="projects-title">Selected projects</h2>
-          <p class="section-lead">A snapshot of recent work focused on transformation, governance, and usability.</p>
+        <div class="section-heading">
+          <p class="eyebrow">Security practice</p>
+          <h2 id="practice-title">Hands-on work outside formal job titles.</h2>
+          <p>The resume includes practical projects and competitions. Those are now presented as active proof of ongoing security development, not as filler portfolio work.</p>
         </div>
-        <div class="projects-grid">
-          <article class="project-card">
-            <figure class="project-card__media">
-              <img src="images/stayserase1.png" alt="Tech company marketing site preview" width="480" height="320" loading="lazy">
-            </figure>
-            <div class="project-card__content">
-              <h3>Tech Company Web Experience</h3>
-              <p>Responsive marketing design highlighting a tech company&rsquo;s services, case studies, and conversion paths.</p>
-              <p class="project-card__meta">Platform: Web Design</p>
-              <a class="project-card__link" href="https://beige-marten-937266.hostingersite.com/" target="_blank" rel="noopener">View it live</a>
-            </div>
+
+        <div class="practice-grid">
+          <article class="practice-card">
+            <p class="card-kicker">Home lab</p>
+            <h3>Virtualized Linux and Windows security lab</h3>
+            <p>Built for log analysis, attack simulation, and system-level observation across different operating environments.</p>
           </article>
-          <article class="project-card">
-            <figure class="project-card__media">
-              <img src="images/web-project.png" alt="Counselling Web Design" width="480" height="320" loading="lazy">
-            </figure>
-            <div class="project-card__content">
-              <h3>Counselling Web Design</h3>
-              <p>Web application for counselling, appointment booking and payment</p>
-              <p class="project-card__meta">Platform: Web Application</p>
-              <a class="project-card__link" href="https://claudettensengimana.com" target="_blank" rel="noopener">View it live</a>
-            </div>
+
+          <article class="practice-card">
+            <p class="card-kicker">CTF work</p>
+            <h3>Web exploitation, cryptography, and network analysis</h3>
+            <p>Challenge-based practice used to sharpen investigation habits, structured debugging, and technical depth under constraints.</p>
           </article>
-          <article class="project-card">
-            <figure class="project-card__media">
-              <img src="images/funspace.png " alt="FunSpace creative multiplayer hub" width="480" height="320" loading="lazy">
-            </figure>
-            <div class="project-card__content">
-              <h3>FunSpace</h3>
-              <p>Digital playground for experimental, social, and AI-driven games. Host rapid-fire sessions, spark collaborative storytelling, and prototype tomorrow&rsquo;s multiplayer moments.</p>
-              <p class="project-card__meta">Platform: Web Application</p>
-              <a class="project-card__link" href="https://fun-space.vercel.app/" target="_blank" rel="noopener">Explore the hub</a>
-            </div>
+
+          <article class="practice-card practice-card--accent">
+            <p class="card-kicker">Competitions</p>
+            <h3>Cybersecurity Challenge Belgium and SANS NetWars</h3>
+            <p>Competitive environments that reinforce offensive understanding, defensive reasoning, and fast signal extraction from limited evidence.</p>
           </article>
-          <article class="project-card">
-            <figure class="project-card__media">
-              <img src="images/work-1.jpg" alt="Preview of the Bus Reservation System interface" width="480" height="320" loading="lazy">
-            </figure>
-            <div class="project-card__content">
-              <h3>Bus Reservation System</h3>
-              <p>Unified mobile and web booking experience managing fleet operations, seat inventory, and payments with real-time updates.</p>
-              <p class="project-card__meta">Platform: Mobile &amp; Web Application</p>
-            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="credentials" class="section section--panel" aria-labelledby="credentials-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Credentials</p>
+          <h2 id="credentials-title">Education, certifications, and language profile.</h2>
+          <p>All content below is drawn directly from the resume so the website functions as a reliable summary rather than a separate narrative.</p>
+        </div>
+
+        <div class="credentials-grid">
+          <article class="stack-card">
+            <p class="card-kicker">Education</p>
+            <h3>Academic track</h3>
+            <ul class="credential-list">
+              <li>
+                <span class="credential-title">Master of Cybersecurity</span>
+                <span class="credential-meta">Universite Libre de Bruxelles · Belgium · Current</span>
+              </li>
+              <li>
+                <span class="credential-title">Bachelor of Computer Application</span>
+                <span class="credential-meta">Parul University · India · 2019 · First Class with Distinction</span>
+              </li>
+              <li>
+                <span class="credential-title">High School Diploma</span>
+                <span class="credential-meta">Groupe Scolaire de La Salle · Rwanda · 2014 · Distinction</span>
+              </li>
+            </ul>
           </article>
-          <article class="project-card">
-            <figure class="project-card__media">
-              <img src="images/work-2.jpg" alt="Blockchain voting system concept" width="480" height="320" loading="lazy">
-            </figure>
-            <div class="project-card__content">
-              <h3>Blockchain-Based Voting</h3>
-              <p>Secure digital voting prototype leveraging blockchain for auditability, voter anonymity, and end-to-end transparency.</p>
-              <p class="project-card__meta">Platform: Mobile &amp; Web Application</p>
-            </div>
+
+          <article class="stack-card">
+            <p class="card-kicker">Certifications</p>
+            <h3>Course and badge history</h3>
+            <ul class="credential-list">
+              <li><span class="credential-title">CompTIA CASP</span><span class="credential-meta">Course Completion - Cybrary</span></li>
+              <li><span class="credential-title">Cisco CCNA</span><span class="credential-meta">Course Completion - Cybrary</span></li>
+              <li><span class="credential-title">Linux System Administration</span><span class="credential-meta">Global Knowledge</span></li>
+              <li><span class="credential-title">Intro to Malware Analysis and Reverse Engineering</span><span class="credential-meta">Security training track</span></li>
+              <li><span class="credential-title">IBM Power Systems and Enterprise Storage Certifications</span><span class="credential-meta">Infrastructure specialization</span></li>
+            </ul>
           </article>
-          <article class="project-card">
-            <figure class="project-card__media">
-              <img src="images/dblp.png" alt="DBLP publications retriever dashboard" width="480" height="320" loading="lazy">
-            </figure>
-            <div class="project-card__content">
-              <h3>DBLP Publications Retriever</h3>
-              <p>Research tooling that aggregates computer science publications and analytics to simplify academic discovery.</p>
-              <p class="project-card__meta">Platform: Web Application</p>
-              <a class="project-card__link" href="https://github.com/danishimwe/dblp-publications-retrieval" target="_blank" rel="noopener">View on GitHub</a>
+
+          <article class="stack-card">
+            <p class="card-kicker">Languages</p>
+            <h3>Working languages</h3>
+            <ul class="credential-list">
+              <li><span class="credential-title">English</span><span class="credential-meta">Fluent</span></li>
+              <li><span class="credential-title">French</span><span class="credential-meta">B2</span></li>
+              <li><span class="credential-title">Dutch</span><span class="credential-meta">B1</span></li>
+            </ul>
+          </article>
+
+          <article class="stack-card">
+            <p class="card-kicker">Resume access</p>
+            <h3>Download or inspect the full CV</h3>
+            <p>The downloadable PDF has been aligned with the resume source file used for this redesign.</p>
+            <div class="stack-card__actions">
+              <a class="btn btn--primary btn--small" href="cv.html">Open resume page</a>
+              <a class="btn btn--ghost btn--small" href="files/Daniel%20Ishimwe-cv.pdf" download="Resume - Daniel Ishimwe.pdf">Download PDF</a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section section--alt" aria-labelledby="contact-title">
-      <div class="container contact-grid">
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container contact-shell">
         <div>
-          <div class="section-header section-header--left">
-            <h2 id="contact-title">Let&rsquo;s build something great</h2>
-            <p class="section-lead">Share your challenges and I&rsquo;ll help you design a path forward. I welcome consulting, contract, and full-time conversations.</p>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Direct channels for recruiters, hiring teams, and collaborators.</h2>
+          <p class="contact-copy">If you want the exact resume, use the PDF. If you want the summary version, this homepage now reflects the same profile, dates, and technical emphasis.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="mailto:daniel.ishimwee@gmail.com">Email Daniel</a>
+            <a class="btn btn--ghost" href="cv.html">Resume page</a>
           </div>
-          <p class="contact-intro">Prefer email? I typically respond within one business day.</p>
-          <a class="btn btn--primary" href="mailto:daniel.ishimwee@gmail.com">daniel.ishimwee@gmail.com</a>
         </div>
-        <div class="contact-links">
+
+        <div class="contact-grid">
           <article class="contact-card">
-            <h3>Email</h3>
-            <a href="mailto:daniel.ishimwee@gmail.com">daniel.ishimwee@gmail.com</a>
+            <p class="contact-card__label">Email</p>
+            <a class="contact-card__value" href="mailto:daniel.ishimwee@gmail.com">daniel.ishimwee@gmail.com</a>
+            <p>Best for interviews, hiring conversations, and technical follow-up.</p>
           </article>
           <article class="contact-card">
-            <h3>LinkedIn</h3>
-            <a href="https://linkedin.com/in/daniel-ishimwe-k" target="_blank" rel="noopener">linkedin.com/in/daniel-ishimwe-k</a>
+            <p class="contact-card__label">Phone</p>
+            <a class="contact-card__value" href="tel:+32492399868">+32 492 39 98 68</a>
+            <p>Belgium number listed on the resume.</p>
           </article>
           <article class="contact-card">
-            <h3>GitHub</h3>
-            <a href="https://github.com/danishimwe" target="_blank" rel="noopener">github.com/danishimwe</a>
+            <p class="contact-card__label">LinkedIn</p>
+            <a class="contact-card__value" href="https://linkedin.com/in/daniel-ishimwe-k" target="_blank" rel="noopener">daniel-ishimwe-k</a>
+            <p>Professional profile and career summary.</p>
           </article>
           <article class="contact-card">
-            <h3>Research</h3>
-            <a href="https://orcid.org/0009-0009-4257-2078" target="_blank" rel="noopener">ORCID: 0009-0009-4257-2078</a>
-            <a href="https://researchgate.net/profile/Daniel-Ishimwe" target="_blank" rel="noopener">ResearchGate profile</a>
+            <p class="contact-card__label">GitHub</p>
+            <a class="contact-card__value" href="https://github.com/danishimwe" target="_blank" rel="noopener">danishimwe</a>
+            <p>Code and technical work that complements the resume.</p>
           </article>
         </div>
       </div>
@@ -570,19 +602,18 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="footer-copy">&copy; <span id="current-year"></span> Daniel Ishimwe. Crafted with care in Brussels.</p>
+      <p class="footer-copy">&copy; <span id="current-year"></span> Daniel Ishimwe. Resume-aligned website.</p>
       <nav aria-label="Footer">
         <ul class="footer-nav">
           <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#craft">Craft</a></li>
-          <li><a href="#toolkit">Toolkit</a></li>
-          <li><a href="#workflow">Workflow</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#credentials">Credentials</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <a class="back-to-top" href="#top">Back to top</a>
     </div>
   </footer>
 
