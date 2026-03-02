@@ -675,7 +675,7 @@ html[data-theme='dark'] .hero-contact a {
 
 .portrait-shell img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  height: clamp(16rem, 22vw, 20rem);
   object-fit: cover;
   object-position: center top;
   border-radius: calc(var(--radius-lg) - 0.7rem);
