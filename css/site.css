@@ -844,6 +844,17 @@ html[data-theme='dark'] .metric-card {
   gap: 0.8rem;
 }
 
+.org-chip--link {
+  color: inherit;
+  cursor: pointer;
+}
+
+.org-chip--link:hover,
+.org-chip--link:focus-visible {
+  border-color: rgba(15, 122, 105, 0.34);
+  text-decoration: none;
+}
+
 .org-chip img {
   height: 2.4rem;
   width: auto;
@@ -953,6 +964,19 @@ html[data-theme='dark'] .metric-card {
   border: 1px solid rgba(18, 32, 43, 0.08);
   background: #ffffff;
   object-fit: contain;
+}
+
+.company-logo-link {
+  display: inline-flex;
+  border-radius: 1rem;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.company-logo-link:hover,
+.company-logo-link:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
 }
 
 .company-logo--text {
