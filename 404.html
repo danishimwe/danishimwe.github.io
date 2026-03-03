@@ -8,6 +8,10 @@
   <script>
     (function () {
       var path = window.location.pathname;
+      if (path === '/about') {
+        window.location.replace('/about/');
+        return;
+      }
       if (path === '/resume') {
         window.location.replace('/resume/');
         return;

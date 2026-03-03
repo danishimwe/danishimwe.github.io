@@ -54,16 +54,95 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Daniel Ishimwe",
-      "jobTitle": "Junior Cybersecurity Engineer",
-      "url": "https://danishimwe.github.io/resume",
-      "image": "https://danishimwe.github.io/images/bg_1.png",
-      "email": "mailto:daniel.ishimwee@gmail.com",
-      "telephone": "+32492399868",
-      "sameAs": [
-        "https://linkedin.com/in/daniel-ishimwe-k",
-        "https://github.com/danishimwe"
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://danishimwe.github.io/about#person",
+          "name": "Daniel Ishimwe",
+          "url": "https://danishimwe.github.io/about",
+          "jobTitle": "Cybersecurity Engineer",
+          "description": "Cybersecurity Engineer and Master's student in Cybersecurity at Universite Libre de Bruxelles.",
+          "image": {
+            "@id": "https://danishimwe.github.io/about#primaryimage"
+          },
+          "email": "mailto:daniel.ishimwee@gmail.com",
+          "telephone": "+32492399868",
+          "sameAs": [
+            "https://linkedin.com/in/daniel-ishimwe-k",
+            "https://github.com/danishimwe"
+          ]
+        },
+        {
+          "@type": "ImageObject",
+          "@id": "https://danishimwe.github.io/about#primaryimage",
+          "url": "https://danishimwe.github.io/images/bg_1.png",
+          "contentUrl": "https://danishimwe.github.io/images/bg_1.png",
+          "caption": "Portrait of Daniel Ishimwe"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://danishimwe.github.io/#website",
+          "url": "https://danishimwe.github.io/",
+          "name": "Daniel Ishimwe",
+          "inLanguage": "en",
+          "publisher": {
+            "@id": "https://danishimwe.github.io/about#person"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://danishimwe.github.io/resume#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://danishimwe.github.io/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Resume",
+              "item": "https://danishimwe.github.io/resume"
+            }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://danishimwe.github.io/resume#webpage",
+          "url": "https://danishimwe.github.io/resume",
+          "name": "Daniel Ishimwe | Resume",
+          "description": "Resume page for Daniel Ishimwe with direct PDF access and summary highlights.",
+          "isPartOf": {
+            "@id": "https://danishimwe.github.io/#website"
+          },
+          "about": {
+            "@id": "https://danishimwe.github.io/about#person"
+          },
+          "mainEntity": {
+            "@id": "https://danishimwe.github.io/resume#pdf"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://danishimwe.github.io/about#primaryimage"
+          },
+          "breadcrumb": {
+            "@id": "https://danishimwe.github.io/resume#breadcrumb"
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "MediaObject",
+          "@id": "https://danishimwe.github.io/resume#pdf",
+          "name": "Resume - Daniel Ishimwe",
+          "contentUrl": "https://danishimwe.github.io/files/Daniel%20Ishimwe-cv.pdf",
+          "encodingFormat": "application/pdf",
+          "creator": {
+            "@id": "https://danishimwe.github.io/about#person"
+          },
+          "about": {
+            "@id": "https://danishimwe.github.io/about#person"
+          }
+        }
       ]
     }
   </script>
@@ -93,11 +172,12 @@
       <nav class="site-nav" id="site-nav" aria-label="Primary">
         <ul class="nav-list">
           <li><a href="/" class="nav-link" data-nav-link data-section="home">Home</a></li>
+          <li><a href="/about" class="nav-link">About</a></li>
           <li><a href="/profile" class="nav-link" data-nav-link data-section="profile">Profile</a></li>
           <li><a href="/expertise" class="nav-link" data-nav-link data-section="expertise">Expertise</a></li>
           <li><a href="/experience" class="nav-link" data-nav-link data-section="experience">Experience</a></li>
           <li><a href="/contact" class="nav-link" data-nav-link data-section="contact">Contact</a></li>
-          <li><a href="/resume" class="nav-link nav-link--cta" data-nav-link data-section="resume">Resume</a></li>
+          <li><a href="/resume" class="nav-link nav-link--cta is-active">Resume</a></li>
           <li>
             <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false" title="Switch to dark mode">
               <span class="sr-only">Toggle theme</span>
@@ -173,6 +253,7 @@
       <nav aria-label="Footer">
         <ul class="footer-nav">
           <li><a href="/" data-section="home">Home</a></li>
+          <li><a href="/about">About</a></li>
           <li><a href="/profile" data-section="profile">Profile</a></li>
           <li><a href="/experience" data-section="experience">Experience</a></li>
           <li><a href="/resume">Resume</a></li>

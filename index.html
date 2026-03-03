@@ -47,34 +47,117 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Daniel Ishimwe",
-      "jobTitle": "Junior Cybersecurity Engineer",
-      "url": "https://danishimwe.github.io/",
-      "image": "https://danishimwe.github.io/images/bg_1.png",
-      "email": "mailto:daniel.ishimwee@gmail.com",
-      "telephone": "+32492399868",
-      "sameAs": [
-        "https://linkedin.com/in/daniel-ishimwe-k",
-        "https://github.com/danishimwe"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "Belgium"
-      },
-      "alumniOf": [
-        "Universite Libre de Bruxelles",
-        "Parul University",
-        "Groupe Scolaire de La Salle"
-      ],
-      "knowsAbout": [
-        "System hardening",
-        "Secure configuration",
-        "Infrastructure operations",
-        "Database administration",
-        "Incident investigation",
-        "Linux",
-        "Windows"
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://danishimwe.github.io/about#person",
+          "name": "Daniel Ishimwe",
+          "url": "https://danishimwe.github.io/about",
+          "mainEntityOfPage": "https://danishimwe.github.io/about",
+          "image": {
+            "@id": "https://danishimwe.github.io/about#primaryimage"
+          },
+          "jobTitle": "Cybersecurity Engineer",
+          "description": "Cybersecurity Engineer and Master's student in Cybersecurity at Universite Libre de Bruxelles with interests in offensive security, system security, and post-quantum cryptography.",
+          "email": "mailto:daniel.ishimwee@gmail.com",
+          "telephone": "+32492399868",
+          "sameAs": [
+            "https://linkedin.com/in/daniel-ishimwe-k",
+            "https://github.com/danishimwe"
+          ],
+          "homeLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "Belgium"
+            }
+          },
+          "affiliation": {
+            "@type": "CollegeOrUniversity",
+            "name": "Universite Libre de Bruxelles"
+          },
+          "alumniOf": [
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "Parul University"
+            },
+            {
+              "@type": "EducationalOrganization",
+              "name": "Groupe Scolaire de La Salle"
+            }
+          ],
+          "knowsLanguage": [
+            "English",
+            "French",
+            "Dutch"
+          ],
+          "knowsAbout": [
+            "Offensive security",
+            "System security",
+            "Post-quantum cryptography",
+            "Reverse engineering",
+            "Network traffic analysis",
+            "Malware analysis",
+            "Linux server environments",
+            "Cloud infrastructure",
+            "Secure application design",
+            "Databases",
+            "Deployment pipelines"
+          ],
+          "hasOccupation": [
+            {
+              "@type": "Occupation",
+              "name": "Cybersecurity Engineer"
+            },
+            {
+              "@type": "Occupation",
+              "name": "Systems and Infrastructure Engineer"
+            }
+          ],
+          "subjectOf": [
+            {
+              "@id": "https://danishimwe.github.io/about#webpage"
+            },
+            {
+              "@id": "https://danishimwe.github.io/resume#webpage"
+            }
+          ]
+        },
+        {
+          "@type": "ImageObject",
+          "@id": "https://danishimwe.github.io/about#primaryimage",
+          "url": "https://danishimwe.github.io/images/bg_1.png",
+          "contentUrl": "https://danishimwe.github.io/images/bg_1.png",
+          "caption": "Portrait of Daniel Ishimwe"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://danishimwe.github.io/#website",
+          "url": "https://danishimwe.github.io/",
+          "name": "Daniel Ishimwe",
+          "description": "Official website of Daniel Ishimwe.",
+          "inLanguage": "en",
+          "publisher": {
+            "@id": "https://danishimwe.github.io/about#person"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://danishimwe.github.io/#webpage",
+          "url": "https://danishimwe.github.io/",
+          "name": "Daniel Ishimwe | Junior Cybersecurity Engineer",
+          "description": "Homepage for Daniel Ishimwe covering cybersecurity, systems, infrastructure, experience, and contact details.",
+          "isPartOf": {
+            "@id": "https://danishimwe.github.io/#website"
+          },
+          "about": {
+            "@id": "https://danishimwe.github.io/about#person"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://danishimwe.github.io/about#primaryimage"
+          },
+          "inLanguage": "en"
+        }
       ]
     }
   </script>
@@ -104,6 +187,7 @@
       <nav class="site-nav" id="site-nav" aria-label="Primary">
         <ul class="nav-list">
           <li><a href="/" class="nav-link" data-nav-link data-section="home">Home</a></li>
+          <li><a href="/about" class="nav-link">About</a></li>
           <li><a href="/profile" class="nav-link" data-nav-link data-section="profile">Profile</a></li>
           <li><a href="/expertise" class="nav-link" data-nav-link data-section="expertise">Expertise</a></li>
           <li><a href="/experience" class="nav-link" data-nav-link data-section="experience">Experience</a></li>
@@ -539,6 +623,7 @@
       <nav aria-label="Footer">
         <ul class="footer-nav">
           <li><a href="/" data-section="home">Home</a></li>
+          <li><a href="/about">About</a></li>
           <li><a href="/profile" data-section="profile">Profile</a></li>
           <li><a href="/expertise" data-section="expertise">Expertise</a></li>
           <li><a href="/experience" data-section="experience">Experience</a></li>

@@ -1171,6 +1171,68 @@ html[data-theme='dark'] .metric-card {
   gap: 0.8rem;
 }
 
+.about-hero {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.92fr);
+}
+
+.about-intro,
+.about-story-card {
+  padding: 1.55rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.about-signal {
+  align-self: start;
+}
+
+.about-story-grid,
+.about-topic-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.about-story-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.about-topic-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.about-topic-card {
+  min-height: 100%;
+}
+
+.about-topic-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.about-topic-list li {
+  position: relative;
+  padding-left: 1.15rem;
+}
+
+.about-topic-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72rem;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.practice-card--accent .about-topic-list li::before {
+  background: rgba(246, 251, 255, 0.88);
+}
+
 .site-footer {
   padding: 1.5rem 0 2rem;
 }
@@ -1218,6 +1280,7 @@ html[data-theme='dark'] .metric-card {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .about-topic-grid,
   .org-strip__items {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1269,6 +1332,8 @@ html[data-theme='dark'] .metric-card {
 
   .hero-grid,
   .profile-grid,
+  .about-hero,
+  .about-story-grid,
   .resume-shell {
     grid-template-columns: 1fr;
   }
@@ -1295,6 +1360,7 @@ html[data-theme='dark'] .metric-card {
   .metric-grid,
   .capability-grid,
   .practice-grid,
+  .about-topic-grid,
   .credentials-grid,
   .contact-grid,
   .org-strip__items {
