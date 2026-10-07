@@ -1739,3 +1739,8 @@ html[data-theme='dark'] .metric-card {
 @media (max-width: 720px) {
   .practice-grid--two { grid-template-columns: 1fr; }
 }
+
+/* ── Dual company logos ── */
+.company-logos { display: inline-flex; align-items: center; gap: 0.6rem; flex: none; }
+.company-logo--wide { width: 6.4rem; height: 3.4rem; padding: 0.4rem 0.7rem; }
+.company-logos .company-logo:not(.company-logo--wide) { padding: 0; overflow: hidden; }
