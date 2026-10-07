@@ -1729,3 +1729,13 @@ html[data-theme='dark'] .metric-card {
 }
 .org-chip { min-height: 0; }
 .org-chip--link:hover strong { color: var(--accent); }
+
+/* ── Simplified content ── */
+.profile-card--wide { max-width: 52rem; }
+.profile-card--wide p { max-width: 62ch; }
+.practice-grid--two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.capability-card { gap: 1rem; }
+.capability-card h3 { margin: 0; }
+@media (max-width: 720px) {
+  .practice-grid--two { grid-template-columns: 1fr; }
+}
