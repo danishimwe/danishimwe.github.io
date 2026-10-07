@@ -1622,3 +1622,22 @@ html[data-theme='dark'] .metric-card {
 @media (max-width: 600px) {
   .achievement-grid { grid-template-columns: 1fr; }
 }
+
+/* ── Post images ── */
+.post-card__image {
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  border-radius: calc(var(--radius-md) - 6px);
+  border: 1px solid var(--border);
+  background: var(--surface-strong, var(--surface));
+}
+.post-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform var(--transition);
+}
+.post-card__image:hover img,
+.post-card__image:focus-visible img { transform: scale(1.03); }
