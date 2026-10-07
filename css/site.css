@@ -1744,3 +1744,32 @@ html[data-theme='dark'] .metric-card {
 .company-logos { display: inline-flex; align-items: center; gap: 0.6rem; flex: none; }
 .company-logo--wide { width: 6.4rem; height: 3.4rem; padding: 0.4rem 0.7rem; }
 .company-logos .company-logo:not(.company-logo--wide) { padding: 0; overflow: hidden; }
+
+/* ── Resume page ── */
+.resume-page { display: grid; gap: 1.75rem; }
+.resume-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.resume-head h1 { margin: 0.35rem 0 0.9rem; font-size: clamp(2.2rem, 5vw, 3.4rem); }
+.resume-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+  padding: 0;
+  margin: 0;
+}
+.resume-links a { color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
+.resume-links a:hover { color: var(--accent); }
+.resume-viewer--full { padding: 0.6rem; overflow: hidden; }
+.resume-viewer--full object {
+  display: block;
+  width: 100%;
+  height: min(1100px, 85vh);
+  min-height: 600px;
+  border-radius: calc(var(--radius-lg) - 8px);
+}
