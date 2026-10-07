@@ -5,6 +5,7 @@
     profile: '/profile',
     expertise: '/expertise',
     experience: '/experience',
+    achievements: '/achievements',
     practice: '/practice',
     contact: '/contact'
   };
